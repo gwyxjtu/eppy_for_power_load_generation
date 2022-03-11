@@ -2,8 +2,8 @@
 python script for generating power cold and heat load in different building type
 
 本脚本提供：
-+ 中国大部分省份城市的epw天气数据
-+ ASHRAE的九种建筑类型的idf文件
++ 中国大部分省份城市的epw天气数据，用于后续ep仿真
++ ASHRAE的一部分建筑类型的idf文件，用于后续ep仿真
 + 通过天气数据和建筑文件仿真每年8760的冷热电负荷
 
 
@@ -16,7 +16,8 @@ python script for generating power cold and heat load in different building type
 + 第三步：所有天气文件已经通过爬虫爬取到weathers/spyder的文件夹下，将需要仿真的城市的数据复制到epwdir所示的文件夹地下，目前写的是weather/1124
 + 第四步：修改最底部try里面的building类型，具体可选项见building的dict.
 
-
+## 运行
+运行run1124.py，负荷输出到res1124文件夹中
 ## 附录
 可提供建筑类型：
 ```
