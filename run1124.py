@@ -28,9 +28,9 @@ def get_dict(filePath):
 # 运行环境配置
 iddfile = "D:/software/ep92/Energy+.idd"
 # epwfile = "CHN_Shaanxi.Xian.570360_CSWD/CHN_Shaanxi.Xian.570360_CSWD.epw"
-rundir = "C:/Users/hp/OneDrive - stu.xjtu.edu.cn/code/建筑仿真/ep_run/"
-epsdir = "C:/Users/hp/OneDrive - stu.xjtu.edu.cn/code/建筑仿真/buildings/"
-epwdir = "D:/OneDrive - stu.xjtu.edu.cn/code/建筑仿真/weathers/1124/"
+rundir = "./ep_run/"
+epsdir = "./buildings/"
+epwdir = "./weathers/1124/"
 buildings = {
     'ApartmentHighRise': "ASHRAE9012016_ApartmentHighRise_Denver",
     'ApartmentMidRise': "ASHRAE9012016_ApartmentMidRise_Denver",
