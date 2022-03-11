@@ -1,0 +1,16 @@
+ ReadVarsESO
+ processing:D:\2021\系统所科研\搬砖\算法class\建筑仿真\in.rvi
+ input file:D:\2021\系统所科研\搬砖\算法class\建筑仿真\ep_run\eplusout.eso
+ output file:D:\2021\系统所科研\搬砖\算法class\建筑仿真\ep_run\eplusout.csv
+ getting all vars from:D:\2021\系统所科研\搬砖\算法class\建筑仿真\ep_run\eplusout.eso
+  number variables requested for output=           4
+ ReadVars Run Time=00hr 00min  0.59sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:D:\2021\系统所科研\搬砖\算法class\建筑仿真\in.mvi
+ input file:D:\2021\系统所科研\搬砖\算法class\建筑仿真\ep_run\eplusout.mtr
+ output file:D:\2021\系统所科研\搬砖\算法class\建筑仿真\ep_run\eplusmtr.csv
+ getting all vars from:D:\2021\系统所科研\搬砖\算法class\建筑仿真\ep_run\eplusout.mtr
+  number variables requested for output=           7
+ ReadVars Run Time=00hr 00min  0.84sec
+ ReadVarsESO program completed successfully.

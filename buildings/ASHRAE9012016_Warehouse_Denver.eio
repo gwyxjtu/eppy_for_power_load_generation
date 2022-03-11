@@ -1,0 +1,1044 @@
+Program Version,EnergyPlus, Version 9.2.0-921312fa1d, YMD=2021.11.29 17:16
+! <Version>, Version ID
+ Version, 9.2
+! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
+ Timesteps per Hour,  4, 15
+! <System Convergence Limits>, Minimum System TimeStep {minutes}, Max HVAC Iterations, Minimum Plant Iterations, Maximum Plant Iterations
+ System Convergence Limits, 1, 20, 2, 8
+! <Simulation Control>, Do Zone Sizing, Do System Sizing, Do Plant Sizing, Do Design Days, Do Weather Simulation, Do HVAC Sizing Simulation
+ Simulation Control, Yes, Yes, No, Yes, Yes, No
+! <Output Reporting Tolerances>, Tolerance for Time Heating Setpoint Not Met, Tolerance for Zone Cooling Setpoint Not Met Time
+ Output Reporting Tolerances, 0.200, 0.200, 
+! <Sizing Output Files>,Style
+Sizing Output Files,Comma
+! <Site:GroundTemperature:BuildingSurface>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:BuildingSurface,  12.68,  12.62,  12.65,  12.65,  13.46,  20.37,  21.76,  21.22,  18.64,  13.56,  12.94,  12.75
+! <Site:GroundTemperature:FCfactorMethod>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:FCfactorMethod,  10.86,  10.57,  11.08,  11.88,  13.97,  15.58,  16.67,  17.00,  16.44,  15.19,  13.51,  11.96
+! <Site:GroundTemperature:Shallow>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:Shallow,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00,  13.00
+! <Site:GroundTemperature:Deep>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:Deep,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00,  16.00
+! <Site:GroundReflectance>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Site:GroundReflectance:SnowModifier>, Normal, Daylighting {dimensionless}
+ Site:GroundReflectance:SnowModifier,   1.000,   1.000
+! <Site:GroundReflectance:Snow>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance:Snow,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Site:GroundReflectance:Snow:Daylighting>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance:Snow:Daylighting,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Environment:Weather Station>,Wind Sensor Height Above Ground {m},Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Sensor Height Above Ground {m},Wind Speed Modifier Coefficient-Internal,Temperature Modifier Coefficient-Internal
+Environment:Weather Station,10.000,0.140,270.000,1.500,1.586,9.750E-003
+! <Site:Location>, Location Name, Latitude {N+/S- Deg}, Longitude {E+/W- Deg},  Time Zone Number {GMT+/-}, Elevation {m},  Standard Pressure at Elevation {Pa}, Standard RhoAir at Elevation
+Site:Location,San Francisco Intl Ap CA USA TMY3 WMO#=724940,37.62,-122.40,-8.00,2.00,101301,1.2040
+! <Site Water Mains Temperature Information>,Calculation Method{},Water Mains Temperature Schedule Name{},Annual Average Outdoor Air Temperature{C},Maximum Difference In Monthly Average Outdoor Air Temperatures{deltaC},Fixed Default Water Mains Temperature{C}
+Site Water Mains Temperature Information,Correlation,NA,9.95,23.70,NA
+! <Building Information>, Building Name,North Axis {deg},Terrain,  Loads Convergence Tolerance Value,Temperature Convergence Tolerance Value,  Solar Distribution,Maximum Number of Warmup Days,Minimum Number of Warmup Days
+ Building Information,Warehouse,90.000,Urban,4.00000E-002,0.40000,FullExterior,25,6
+! <Inside Convection Algorithm>, Algorithm {Simple | TARP | CeilingDiffuser | AdaptiveConvectionAlgorithm}
+Inside Convection Algorithm,TARP
+! <Outside Convection Algorithm>, Algorithm {SimpleCombined | TARP | MoWitt | DOE-2 | AdaptiveConvectionAlgorithm}
+Outside Convection Algorithm,TARP
+! <Sky Radiance Distribution>, Value {Anisotropic}
+Sky Radiance Distribution,Anisotropic
+! <Zone Air Solution Algorithm>, Value {ThirdOrderBackwardDifference | AnalyticalSolution | EulerMethod}
+ Zone Air Solution Algorithm, ThirdOrderBackwardDifference
+! <Zone Air Carbon Dioxide Balance Simulation>, Simulation {Yes/No}, Carbon Dioxide Concentration
+ Zone Air Carbon Dioxide Balance Simulation, No,N/A
+! <Zone Air Generic Contaminant Balance Simulation>, Simulation {Yes/No}, Generic Contaminant Concentration
+ Zone Air Generic Contaminant Balance Simulation, No,N/A
+! <Zone Air Mass Flow Balance Simulation>, Enforce Mass Balance, Adjust Zone Mixing, Adjust Zone Infiltration {AddInfiltration | AdjustInfiltration | None}, Infiltration Zones {MixingSourceZonesOnly | AllZones}
+ Zone Air Mass Flow Balance Simulation, No,N/A,N/A,N/A
+! <HVACSystemRootFindingAlgorithm>, Value {RegulaFalsi | Bisection | BisectionThenRegulaFalsi | RegulaFalsiThenBisection}
+ HVACSystemRootFindingAlgorithm, RegulaFalsi
+! <Environment:Site Atmospheric Variation>,Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Gradient Coefficient {K/m}
+Environment:Site Atmospheric Variation,0.220,370.000,6.500000E-003
+! <Surface Geometry>,Starting Corner,Vertex Input Direction,Coordinate System,Daylight Reference Point Coordinate System,Rectangular (Simple) Surface Coordinate System
+ Surface Geometry,UpperLeftCorner,Counterclockwise,RelativeCoordinateSystem,RelativeCoordinateSystem,RelativeToZoneOrigin
+! <Surface Heat Transfer Algorithm>, Value {CTF - ConductionTransferFunction | EMPD - MoisturePenetrationDepthConductionTransferFunction | CondFD - ConductionFiniteDifference | HAMT - CombinedHeatAndMoistureFiniteElement} - Description,Inside Surface Max Temperature Limit{C}, Surface Convection Coefficient Lower Limit {W/m2-K}, Surface Convection Coefficient Upper Limit {W/m2-K}
+Surface Heat Transfer Algorithm, CTF - ConductionTransferFunction,200,0.10,1000.0
+! <Shading Summary>, Number of Fixed Detached Shades, Number of Building Detached Shades, Number of Attached Shades
+ Shading Summary,0,0,0
+! <Zone Summary>, Number of Zones, Number of Zone Surfaces, Number of SubSurfaces
+ Zone Summary,3,102,78
+! <Zone Information>,Zone Name,North Axis {deg},Origin X-Coordinate {m},Origin Y-Coordinate {m},Origin Z-Coordinate {m},Centroid X-Coordinate {m},Centroid Y-Coordinate {m},Centroid Z-Coordinate {m},Type,Zone Multiplier,Zone List Multiplier,Minimum X {m},Maximum X {m},Minimum Y {m},Maximum Y {m},Minimum Z {m},Maximum Z {m},Ceiling Height {m},Volume {m3},Zone Inside Convection Algorithm {Simple-Detailed-CeilingDiffuser-TrombeWall},Zone Outside Convection Algorithm {Simple-Detailed-Tarp-MoWitt-DOE-2-BLAST}, Floor Area {m2},Exterior Gross Wall Area {m2},Exterior Net Wall Area {m2},Exterior Window Area {m2}, Number of Surfaces, Number of SubSurfaces, Number of Shading SubSurfaces,  Part of Total Building Area
+ Zone Information, ZONE1 OFFICE,0.0,0.00,0.00,0.00,4.57,-12.95,2.13,1,1,1,0.00,9.14,-25.91,5.60E-016,0.00,4.27,4.27,1010.76,TARP,TARP,236.88,149.56,128.00,17.66,6,6,0,Yes
+ Zone Information, ZONE2 FINE STORAGE,0.0,0.00,0.00,0.00,14.29,-22.82,4.51,1,1,1,0.00,30.48,-45.72,1.87E-015,0.00,8.53,7.81,2953.02,TARP,TARP,1393.41,760.80,727.17,20.81,11,20,0,Yes
+ Zone Information, ZONE3 BULK STORAGE,0.0,0.00,0.00,0.00,65.53,-22.86,4.27,1,1,1,30.48,100.58,-45.72,6.16E-015,0.00,8.53,8.53,35277.63,TARP,TARP,3204.84,1586.63,1471.35,47.57,6,52,0,Yes
+! <Zone Internal Gains Nominal>,Zone Name, Floor Area {m2},# Occupants,Area per Occupant {m2/person},Occupant per Area {person/m2},Interior Lighting {W/m2},Electric Load {W/m2},Gas Load {W/m2},Other Load {W/m2},Hot Water Eq {W/m2},Steam Equipment {W/m2},Sum Loads per Area {W/m2},Outdoor Controlled Baseboard Heat
+ Zone Internal Gains Nominal, ZONE1 OFFICE,236.88,5.0,47.376,2.111E-002,8.503,8.074,0.000,0.000,0.000,0.000,16.577,No
+ Zone Internal Gains Nominal, ZONE2 FINE STORAGE,1393.41,0.0,N/A,0.000,7.427,0.000,0.000,0.000,0.000,0.000,7.427,No
+ Zone Internal Gains Nominal, ZONE3 BULK STORAGE,3204.84,0.0,N/A,0.000,3.767,2.559,0.000,0.000,0.000,0.000,6.326,No
+! <People Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Number of People {},People/Floor Area {person/m2},Floor Area per person {m2/person},Fraction Radiant,Fraction Convected,Sensible Fraction Calculation,Activity level,ASHRAE 55 Warnings,Carbon Dioxide Generation Rate,Nominal Minimum Number of People,Nominal Maximum Number of People
+ People Internal Gains Nominal, OFFICE PEOPLE,BLDG_OCC_SCH,ZONE1 OFFICE,236.88,5.0,5.0,2.111E-002,47.376,0.300,0.700,AutoCalculate,OFFICE ACTIVITY SCHEDULE,No,3.8200E-008,0,5
+! <Lights Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Lighting Level {W},Lights/Floor Area {W/m2},Lights per person {W/person},Fraction Return Air,Fraction Radiant,Fraction Short Wave,Fraction Convected,Fraction Replaceable,End-Use Category,Nominal Minimum Lighting Level {W},Nominal Maximum Lighting Level {W}
+ Lights Internal Gains Nominal, OFFICE LIGHTS,BLDG_LIGHT_OFFICE_SCH,ZONE1 OFFICE,236.88,5.0,2014.304,8.503,402.861,0.000,0.370,0.180,0.450,1.000,GeneralLights,0.000,2014.304
+ Lights Internal Gains Nominal, FINE STORAGE AREA LIGHTS,BLDG_LIGHT_STORAGE_SCH,ZONE2 FINE STORAGE,1393.41,0.0,10348.991,7.427,N/A,0.000,0.420,0.180,0.400,1.000,GeneralLights,0.000,10348.991
+ Lights Internal Gains Nominal, BULK STORAGE AREA LIGHTS,BLDG_LIGHT_STORAGE_SCH,ZONE3 BULK STORAGE,3204.84,0.0,12073.822,3.767,N/A,0.000,0.420,0.180,0.400,1.000,GeneralLights,0.000,12073.822
+! <ElectricEquipment Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Equipment Level {W},Equipment/Floor Area {W/m2},Equipment per person {W/person},Fraction Latent,Fraction Radiant,Fraction Lost,Fraction Convected,End-Use SubCategory,Nominal Minimum Equipment Level {W},Nominal Maximum Equipment Level {W}
+ ElectricEquipment Internal Gains Nominal, OFFICE PLUG LOAD,OFFICE_PLUG_SCH,ZONE1 OFFICE,236.88,5.0,1912.500,8.074,382.500,0.000,0.000,0.000,1.000,General,0.000,1912.500
+ ElectricEquipment Internal Gains Nominal, BULK STORAGE  PLUG LOAD,BULK STORAGE PLUG SCHEDULE,ZONE3 BULK STORAGE,3204.84,0.0,8200.120,2.559,N/A,0.000,0.000,0.000,1.000,General,0.000,8200.120
+! <Construction CTF>,Construction Name,Index,#Layers,#CTFs,Time Step {hours},ThermalConductance {w/m2-K},OuterThermalAbsorptance,InnerThermalAbsorptance,OuterSolarAbsorptance,InnerSolarAbsorptance,Roughness
+! <Material CTF Summary>,Material Name,Thickness {m},Conductivity {w/m-K},Density {kg/m3},Specific Heat {J/kg-K},ThermalResistance {m2-K/w}
+! <Material:Air>,Material Name,ThermalResistance {m2-K/w}
+! <CTF>,Time,Outside,Cross,Inside,Flux (except final one)
+ Construction CTF,EXT_SLAB_6IN,  10,   1,   5,   0.250,      15.16    ,   0.900,   0.900,   0.700,   0.700,MediumRough
+ Material CTF Summary,150MM NORMALWEIGHT CONCRETE FLOOR,  0.1524,         2.310,   2322.000,      832.000,  0.6597E-01
+ CTF,   5,     -0.14145654E-03,      0.41251809E-05,     -0.14145654E-03,      0.52693849E-06
+ CTF,   4,      0.56782248E-01,      0.37927617E-02,      0.56782248E-01,     -0.24986850E-03
+ CTF,   3,      -3.2174914    ,      0.21939238    ,      -3.2174914    ,      0.18590692E-01
+ CTF,   2,       33.339158    ,       1.5387190    ,       33.339158    ,     -0.27062541    
+ CTF,   1,      -88.400408    ,       1.4917516    ,      -88.400408    ,       1.0298033    
+ CTF,   0,       61.594347    ,      0.11858768    ,       61.594347    
+ Construction CTF,NONRES_ROOF,  16,   2,   2,   0.250,     0.2163    ,   0.900,   0.900,   0.770,   0.700,Smooth
+ Material CTF Summary,F08 METAL ROOF SURFACE,  0.0008,        45.280,   7824.000,      500.000,  0.1767E-04
+ Material CTF Summary,NONRES_ROOF_INSULATION,  0.0000,         0.000,      0.000,        0.000,   4.622    
+ CTF,   2,      0.66502651E-10,      0.51215936E-15,      0.22208603E-15,       0.0000000    
+ CTF,   1,      -3.4773734    ,      0.34256452E-04,     -0.49367319E-04,      0.19124392E-10
+ CTF,   0,       3.6937127    ,      0.21630503    ,      0.21638865    
+ Construction CTF,SEMIHEATED_ROOF,  18,   2,   2,   0.250,     0.5039    ,   0.900,   0.900,   0.770,   0.700,Smooth
+ Material CTF Summary,F08 METAL ROOF SURFACE,  0.0008,        45.280,   7824.000,      500.000,  0.1767E-04
+ Material CTF Summary,SEMIHEATED_ROOF_INSULATION,  0.0000,         0.000,      0.000,        0.000,   1.984    
+ CTF,   2,      0.21960971E-08,      0.12113364E-12,      0.89972267E-13,       0.0000000    
+ CTF,   1,      -3.4773246    ,      0.27681846E-04,     -0.21196273E-04,      0.42453638E-08
+ CTF,   0,       3.9812442    ,      0.50389190    ,      0.50394078    
+ Construction CTF,NONRES_EXT_WALL,  19,   3,   3,   0.250,     0.2948    ,   0.900,   0.900,   0.700,   0.700,Smooth
+ Material CTF Summary,F08 METAL SURFACE,  0.0008,        45.280,   7824.000,      500.000,  0.1767E-04
+ Material CTF Summary,NONRES_EXTERIOR_WALL_INSULATION,  0.0000,         0.000,      0.000,        0.000,   3.293    
+ Material CTF Summary,G01 16MM GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ CTF,   3,     -0.23129266E-05,      0.12229011E-08,     -0.33622638E-06,      0.45027526E-17
+ CTF,   2,      0.68618067    ,      0.17714132E-02,      0.45040407    ,     -0.66514361E-06
+ CTF,   1,      -4.2252847    ,      0.12082765    ,      -12.955792    ,      0.19732505    
+ CTF,   0,       3.7757074    ,      0.11400197    ,       12.741989    
+ Construction CTF,SEMIHEATED_EXT_WALL,  21,   3,   3,   0.250,     0.6999    ,   0.900,   0.900,   0.700,   0.700,Smooth
+ Material CTF Summary,F08 METAL SURFACE,  0.0008,        45.280,   7824.000,      500.000,  0.1767E-04
+ Material CTF Summary,SEMIHEATED_EXTERIOR_WALL_INSULATION,  0.0000,         0.000,      0.000,        0.000,   1.329    
+ Material CTF Summary,G01 16MM GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ CTF,   3,     -0.20787333E-05,      0.27103919E-08,     -0.30074553E-06,      0.97441680E-18
+ CTF,   2,      0.64888041    ,      0.41115745E-02,      0.42340283    ,     -0.59778226E-06
+ CTF,   1,      -4.2774711    ,      0.28846329    ,      -12.633329    ,      0.18657663    
+ CTF,   0,       4.1978900    ,      0.27672233    ,       12.779224    
+ Construction CTF,SWINGING DOOR_CON, 131,   1,   1,   0.250,      2.102    ,   0.900,   0.900,   0.700,   0.700,MediumRough
+ Material CTF Summary,OPAQUE DOOR PANEL_CON,  0.0000,         0.000,      0.000,        0.000,  0.4757    
+ CTF,   1,       0.0000000    ,       0.0000000    ,      -0.0000000    ,      -0.0000000    
+ CTF,   0,       2.1022727    ,       2.1022727    ,       2.1022727    
+ Construction CTF,SWINGING DOOR_SEMI, 132,   1,   1,   0.250,      2.102    ,   0.900,   0.900,   0.700,   0.700,MediumRough
+ Material CTF Summary,OPAQUE DOOR PANEL_SEMI,  0.0000,         0.000,      0.000,        0.000,  0.4757    
+ CTF,   1,       0.0000000    ,       0.0000000    ,      -0.0000000    ,      -0.0000000    
+ CTF,   0,       2.1022727    ,       2.1022727    ,       2.1022727    
+ Construction CTF,OVERHEAD DOOR_SEMI, 134,   1,   1,   0.250,      2.045    ,   0.900,   0.900,   0.700,   0.700,MediumRough
+ Material CTF Summary,OVERHEAD DOOR_SEMI PANEL,  0.0000,         0.000,      0.000,        0.000,  0.4889    
+ CTF,   1,       0.0000000    ,       0.0000000    ,      -0.0000000    ,      -0.0000000    
+ CTF,   0,       2.0454545    ,       2.0454545    ,       2.0454545    
+ Construction CTF,OVERHEAD DOOR_CON, 135,   1,   1,   0.250,      1.761    ,   0.900,   0.900,   0.700,   0.700,MediumRough
+ Material CTF Summary,OVERHEAD DOOR_CON PANEL,  0.0000,         0.000,      0.000,        0.000,  0.5677    
+ CTF,   1,       0.0000000    ,       0.0000000    ,      -0.0000000    ,      -0.0000000    
+ CTF,   0,       1.7613636    ,       1.7613636    ,       1.7613636    
+ Construction CTF,BULK STORAGE PRODUCTS, 136,   1,  18,   0.500,     0.5914    ,   0.900,   0.900,   0.700,   0.700,Rough
+ Material CTF Summary,BULK STORAGE PRODUCTS MATERIAL,  2.4384,         1.442,    200.231,      836.800,   1.691    
+ CTF,  18,      0.12003549E-12,     -0.36149852E-21,      0.11999160E-12,     -0.69171859E-14
+ CTF,  17,     -0.26702818E-10,      0.22043783E-17,     -0.26702965E-10,      0.15647703E-11
+ CTF,  16,      0.26199194E-08,      0.46087291E-16,      0.26199192E-08,     -0.15597178E-09
+ CTF,  15,     -0.14918350E-06,     -0.27301975E-15,     -0.14918350E-06,      0.90448703E-08
+ CTF,  14,      0.54929883E-05,      0.10218664E-13,      0.54929883E-05,     -0.34010628E-06
+ CTF,  13,     -0.13812653E-03,      0.13886261E-11,     -0.13812653E-03,      0.87613853E-05
+ CTF,  12,      0.24466257E-02,      0.76740851E-10,      0.24466257E-02,     -0.15954016E-03
+ CTF,  11,     -0.31099262E-01,      0.20215154E-08,     -0.31099262E-01,      0.20926433E-02
+ CTF,  10,      0.28694928    ,      0.26940884E-07,      0.28694928    ,     -0.20002833E-01
+ CTF,   9,      -1.9353699    ,      0.18750649E-06,      -1.9353699    ,      0.14030665    
+ CTF,   8,       9.5767226    ,      0.68900696E-06,       9.5767226    ,     -0.72468789    
+ CTF,   7,      -34.784653    ,      0.13258951E-05,      -34.784653    ,       2.7565275    
+ CTF,   6,       92.438040    ,      0.12976568E-05,       92.438040    ,      -7.6923258    
+ CTF,   5,      -178.18614    ,      0.60985027E-06,      -178.18614    ,       15.604270    
+ CTF,   4,       245.02895    ,      0.12430126E-06,       245.02895    ,      -22.615757    
+ CTF,   3,      -233.27712    ,      0.91617964E-08,      -233.27712    ,       22.714127    
+ CTF,   2,       145.61910    ,      0.16319500E-09,       145.61910    ,      -14.964058    
+ CTF,   1,      -53.478849    ,      0.26256209E-11,      -53.478849    ,       5.7996512    
+ CTF,   0,       8.7411694    ,     -0.39181092E-12,       8.7411694    
+ Construction CTF,INTERIOR WALL, 137,   5,   5,   2.250,     0.7747    ,   0.900,   0.900,   0.700,   0.700,Smooth
+ Material CTF Summary,F07 25MM STUCCO,  0.0254,         0.720,   1856.000,      840.000,  0.3528E-01
+ Material CTF Summary,G01 16MM GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ Material CTF Summary,INTERIOR WALL ADDI INSUL,  0.0000,         0.043,     22.426,      836.800,  0.5871E-06
+ Material CTF Summary,STEEL FRAME/CAVITY,  0.0889,         0.084,    641.379,      502.080,   1.057    
+ Material CTF Summary,G01 16MM GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ CTF,   5,     -0.49145023E-13,      0.39366723E-14,     -0.15058007E-13,      0.59329281E-16
+ CTF,   4,      0.11056171E-06,      0.13691376E-07,      0.48366446E-07,     -0.28542221E-13
+ CTF,   3,     -0.19249558E-02,      0.22112289E-03,     -0.71007448E-03,      0.52103495E-07
+ CTF,   2,      0.84757794    ,      0.56481424E-01,      0.25136949    ,     -0.54715354E-03
+ CTF,   1,      -8.0099862    ,      0.54471288    ,      -2.9348911    ,      0.15044600    
+ CTF,   0,       7.8217913    ,      0.57065820E-01,       3.3436158    
+ Construction CTF,INSULATEDCEILING, 138,   2,   3,   0.250,      10.06    ,   0.900,   0.900,   0.700,   0.700,MediumRough
+ Material CTF Summary,INTERIOR WALL ADDI INSUL,  0.0000,         0.043,     22.426,      836.800,  0.5871E-06
+ Material CTF Summary,G01 16MM GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ CTF,   3,     -0.49536291E-11,      0.52337982E-12,     -0.60856382E-12,     -0.27310604E-16
+ CTF,   2,      0.57291036E-02,      0.14870644E-02,      0.28168084E-02,     -0.29621582E-11
+ CTF,   1,      -5.3161319    ,       2.6685832    ,      -4.8327962    ,      0.24699478E-02
+ CTF,   0,       15.304865    ,       7.3923224    ,       14.867958    
+ Construction CTF,iz-INTERIOR WALL, 139,   5,   5,   2.250,     0.7747    ,   0.900,   0.900,   0.700,   0.700,MediumSmooth
+ Material CTF Summary,G01 16MM GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ Material CTF Summary,STEEL FRAME/CAVITY,  0.0889,         0.084,    641.379,      502.080,   1.057    
+ Material CTF Summary,INTERIOR WALL ADDI INSUL,  0.0000,         0.043,     22.426,      836.800,  0.5871E-06
+ Material CTF Summary,G01 16MM GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ Material CTF Summary,F07 25MM STUCCO,  0.0254,         0.720,   1856.000,      840.000,  0.3528E-01
+ CTF,   5,     -0.15058007E-13,      0.39366723E-14,     -0.49145023E-13,      0.59329281E-16
+ CTF,   4,      0.48366446E-07,      0.13691376E-07,      0.11056171E-06,     -0.28542221E-13
+ CTF,   3,     -0.71007448E-03,      0.22112289E-03,     -0.19249558E-02,      0.52103495E-07
+ CTF,   2,      0.25136949    ,      0.56481424E-01,      0.84757794    ,     -0.54715354E-03
+ CTF,   1,      -2.9348911    ,      0.54471288    ,      -8.0099862    ,      0.15044600    
+ CTF,   0,       3.3436158    ,      0.57065820E-01,       7.8217913    
+ Construction CTF,iz-SEMIHEATED_EXT_WALL, 140,   3,   3,   0.250,     0.6999    ,   0.900,   0.900,   0.700,   0.700,MediumSmooth
+ Material CTF Summary,G01 16MM GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ Material CTF Summary,SEMIHEATED_EXTERIOR_WALL_INSULATION,  0.0000,         0.000,      0.000,        0.000,   1.329    
+ Material CTF Summary,F08 METAL SURFACE,  0.0008,        45.280,   7824.000,      500.000,  0.1767E-04
+ CTF,   3,     -0.30074553E-06,      0.27103919E-08,     -0.20787333E-05,      0.97441680E-18
+ CTF,   2,      0.42340283    ,      0.41115745E-02,      0.64888041    ,     -0.59778226E-06
+ CTF,   1,      -12.633329    ,      0.28846329    ,      -4.2774711    ,      0.18657663    
+ CTF,   0,       12.779224    ,      0.27672233    ,       4.1978900    
+ Construction CTF,iz-INSULATEDCEILING, 141,   2,   3,   0.250,      10.06    ,   0.900,   0.900,   0.700,   0.700,MediumSmooth
+ Material CTF Summary,G01 16MM GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ Material CTF Summary,INTERIOR WALL ADDI INSUL,  0.0000,         0.043,     22.426,      836.800,  0.5871E-06
+ CTF,   3,     -0.60856382E-12,      0.52337982E-12,     -0.49536291E-11,     -0.27310604E-16
+ CTF,   2,      0.28168084E-02,      0.14870644E-02,      0.57291036E-02,     -0.29621582E-11
+ CTF,   1,      -4.8327962    ,       2.6685832    ,      -5.3161319    ,      0.24699478E-02
+ CTF,   0,       14.867958    ,       7.3923224    ,       15.304865    
+! <WindowConstruction>,Construction Name,Index,#Layers,Roughness,Conductance {W/m2-K},SHGC,Solar Transmittance at Normal Incidence,Visible Transmittance at Normal Incidence
+! <WindowMaterial:Glazing>, Material Name, Optical Data Type, Spectral Data Set Name, Thickness {m}, Solar Transmittance,Front Solar Reflectance, Back Solar Reflectance, Visible Transmittance, Front Visible Reflectance,Back Visible Reflectance,Infrared Transmittance, Front Thermal Emissivity, Back Thermal Emissivity,Conductivity {W/m-K},Dirt Factor,Solar Diffusing
+! <WindowMaterial:Gas>,Material Name,GasType,Thickness {m}
+ WindowConstruction,WINDOW_U_1.22_SHGC_0.61,28,1,VerySmooth,5.778,0.623,0.487,0.749
+ WindowMaterial:Glazing,GREEN 6MM,SpectralAverage,,6.00000E-003,0.48700,5.60000E-002,5.60000E-002,0.74900,7.00000E-002,7.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.22_SHGC_0.39,29,1,VerySmooth,5.067,0.400,0.241,0.301
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.22_SHGC_0.34,30,1,VerySmooth,4.913,0.365,0.201,0.221
+ WindowMaterial:Glazing,REF C CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.20000,0.16000,0.39000,0.22000,0.17000,0.35000,0.00000,0.84000,0.55000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.22_SHGC_0.25,31,1,VerySmooth,5.778,0.306,9.905E-002,0.155
+ WindowMaterial:Glazing,ECREF-1 COLORED 6MM,SpectralAverage,,6.00000E-003,9.90000E-002,0.21900,0.21900,0.15500,7.30000E-002,7.30000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.72_SHGC_0.25,32,1,VerySmooth,4.600,0.293,0.100,0.130
+ WindowMaterial:Glazing,REF B TINT MID 6MM,SpectralAverage,,6.00000E-003,0.10000,0.11000,0.41000,0.13000,0.10000,0.32000,0.00000,0.84000,0.45000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.62_SHGC_0.39,33,3,VerySmooth,3.045,0.428,0.343,0.308
+ WindowMaterial:Glazing,REF D CLEAR 6MM,SpectralAverage,,6.00000E-003,0.42900,0.30800,0.37900,0.33400,0.45300,0.50500,0.00000,0.84000,0.82000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.57_SHGC_0.39,34,3,VerySmooth,3.045,0.428,0.343,0.308
+ WindowMaterial:Glazing,REF D CLEAR 6MM,SpectralAverage,,6.00000E-003,0.42900,0.30800,0.37900,0.33400,0.45300,0.50500,0.00000,0.84000,0.82000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.65_SHGC_0.25,35,3,VerySmooth,2.848,0.287,0.160,0.200
+ WindowMaterial:Glazing,REF C CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.20000,0.16000,0.39000,0.22000,0.17000,0.35000,0.00000,0.84000,0.55000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.62_SHGC_0.25,36,3,VerySmooth,2.848,0.287,0.160,0.200
+ WindowMaterial:Glazing,REF C CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.20000,0.16000,0.39000,0.22000,0.17000,0.35000,0.00000,0.84000,0.55000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.57_SHGC_0.25,37,3,VerySmooth,2.848,0.287,0.160,0.200
+ WindowMaterial:Glazing,REF C CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.20000,0.16000,0.39000,0.22000,0.17000,0.35000,0.00000,0.84000,0.55000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.62_SHGC_0.49,38,3,VerySmooth,3.058,0.502,0.373,0.505
+ WindowMaterial:Glazing,BLUE 6MM,SpectralAverage,,6.00000E-003,0.48000,5.00000E-002,5.00000E-002,0.57000,6.00000E-002,6.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.57_SHGC_0.49,39,3,VerySmooth,3.058,0.502,0.373,0.505
+ WindowMaterial:Glazing,BLUE 6MM,SpectralAverage,,6.00000E-003,0.48000,5.00000E-002,5.00000E-002,0.57000,6.00000E-002,6.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.52_SHGC_0.40,40,3,VerySmooth,2.653,0.426,0.343,0.308
+ WindowMaterial:Glazing,REF D CLEAR 6MM,SpectralAverage,,6.00000E-003,0.42900,0.30800,0.37900,0.33400,0.45300,0.50500,0.00000,0.84000,0.82000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.48_SHGC_0.40,41,3,VerySmooth,2.653,0.426,0.343,0.308
+ WindowMaterial:Glazing,REF D CLEAR 6MM,SpectralAverage,,6.00000E-003,0.42900,0.30800,0.37900,0.33400,0.45300,0.50500,0.00000,0.84000,0.82000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.42_SHGC_0.45,42,3,VerySmooth,2.493,0.426,0.343,0.308
+ WindowMaterial:Glazing,REF D CLEAR 6MM,SpectralAverage,,6.00000E-003,0.42900,0.30800,0.37900,0.33400,0.45300,0.50500,0.00000,0.84000,0.82000,0.90000,1.00000,No
+ WindowMaterial:Gas,ARGON 13MM,Argon,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.46_SHGC_0.45,43,3,VerySmooth,2.670,0.479,0.354,0.381
+ WindowMaterial:Glazing,GREY 6MM,SpectralAverage,,6.00000E-003,0.45500,5.30000E-002,5.30000E-002,0.43100,5.20000E-002,5.20000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.42_SHGC_0.40,44,3,VerySmooth,2.371,0.397,0.284,0.444
+ WindowMaterial:Glazing,LOE TINT 6MM,SpectralAverage,,6.00000E-003,0.36000,9.30000E-002,0.20000,0.50000,3.50000E-002,5.40000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.43_SHGC_0.26,45,3,VerySmooth,2.447,0.305,0.191,0.271
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.44_SHGC_0.26,46,3,VerySmooth,2.447,0.305,0.191,0.271
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.42_SHGC_0.35,47,3,VerySmooth,2.371,0.397,0.284,0.444
+ WindowMaterial:Glazing,LOE TINT 6MM,SpectralAverage,,6.00000E-003,0.36000,9.30000E-002,0.20000,0.50000,3.50000E-002,5.40000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.33_SHGC_0.40,48,3,VerySmooth,1.761,0.380,0.284,0.444
+ WindowMaterial:Glazing,LOE TINT 6MM,SpectralAverage,,6.00000E-003,0.36000,9.30000E-002,0.20000,0.50000,3.50000E-002,5.40000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.34_SHGC_0.40,49,3,VerySmooth,1.761,0.380,0.284,0.444
+ WindowMaterial:Glazing,LOE TINT 6MM,SpectralAverage,,6.00000E-003,0.36000,9.30000E-002,0.20000,0.50000,3.50000E-002,5.40000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.35_SHGC_0.35,50,3,VerySmooth,1.761,0.380,0.284,0.444
+ WindowMaterial:Glazing,LOE TINT 6MM,SpectralAverage,,6.00000E-003,0.36000,9.30000E-002,0.20000,0.50000,3.50000E-002,5.40000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.55_SHGC_0.31,51,3,VerySmooth,3.045,0.368,0.239,0.229
+ WindowMaterial:Glazing,REF D TINT 6MM,SpectralAverage,,6.00000E-003,0.30000,0.14000,0.36000,0.25000,0.18000,0.45000,0.00000,0.84000,0.82000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.43_SHGC_0.29,52,3,VerySmooth,2.272,0.313,0.208,0.408
+ WindowMaterial:Glazing,LOE SPEC SEL TINT 6MM,SpectralAverage,,6.00000E-003,0.26000,0.14000,0.41000,0.46000,6.00000E-002,4.00000E-002,0.00000,0.84000,3.00000E-002,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.34_SHGC_0.45,53,3,VerySmooth,1.932,0.634,0.531,0.721
+ WindowMaterial:Glazing,PYR B CLEAR 6MM,SpectralAverage,,6.00000E-003,0.68000,9.00000E-002,0.10000,0.81000,0.11000,0.12000,0.00000,0.84000,0.20000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.56_SHGC_0.35,54,3,VerySmooth,3.045,0.368,0.239,0.229
+ WindowMaterial:Glazing,REF D TINT 6MM,SpectralAverage,,6.00000E-003,0.30000,0.14000,0.36000,0.25000,0.18000,0.45000,0.00000,0.84000,0.82000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.45_SHGC_0.31,55,3,VerySmooth,2.447,0.305,0.191,0.271
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.33_SHGC_0.45,56,5,VerySmooth,1.745,0.462,0.377,0.637
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,COATED POLY-77,SpectralAverage,,5.10000E-004,0.50400,0.40200,0.39800,0.76600,0.14700,0.16700,0.00000,7.50000E-002,0.72000,0.14000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.38_SHGC_0.26,57,3,VerySmooth,2.267,0.242,0.119,0.163
+ WindowMaterial:Glazing,REF B TINT HI 6MM,SpectralAverage,,6.00000E-003,0.15000,9.00000E-002,0.33000,0.18000,8.00000E-002,0.28000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowMaterial:Gas,ARGON 13MM,Argon,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.25_SHGC_0.40,58,3,VerySmooth,1.493,0.373,0.284,0.444
+ WindowMaterial:Glazing,LOE TINT 6MM,SpectralAverage,,6.00000E-003,0.36000,9.30000E-002,0.20000,0.50000,3.50000E-002,5.40000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,ARGON 13MM,Argon,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.35_SHGC_0.26,59,3,VerySmooth,2.158,0.238,0.136,0.173
+ WindowMaterial:Glazing,REF C CLEAR MID 6MM,SpectralAverage,,6.00000E-003,0.17000,0.20000,0.42000,0.19000,0.21000,0.38000,0.00000,0.84000,0.51000,0.90000,1.00000,No
+ WindowMaterial:Gas,ARGON 13MM,Argon,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.54_SHGC_0.27,60,3,VerySmooth,2.848,0.287,0.160,0.200
+ WindowMaterial:Glazing,REF C CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.20000,0.16000,0.39000,0.22000,0.17000,0.35000,0.00000,0.84000,0.55000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.54_SHGC_0.18,61,3,VerySmooth,2.779,0.187,4.810E-002,8.185E-002
+ WindowMaterial:Glazing,REF A TINT MID 6MM,SpectralAverage,,6.00000E-003,6.00000E-002,0.13000,0.42000,9.00000E-002,0.14000,0.35000,0.00000,0.84000,0.47000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.54_SHGC_0.13,62,3,VerySmooth,2.219,0.138,5.319E-002,7.288E-002
+ WindowMaterial:Glazing,REF A CLEAR LO 6MM,SpectralAverage,,6.00000E-003,6.60000E-002,0.34100,0.49300,8.00000E-002,0.41000,0.37000,0.00000,0.84000,0.40000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.33_SHGC_0.11,63,3,VerySmooth,1.614,0.119,4.705E-002,0.120
+ WindowMaterial:Glazing,ECREF-2 COLORED 6MM,SpectralAverage,,6.00000E-003,9.90000E-002,0.21900,0.21900,0.15500,7.30000E-002,7.30000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,LOE SPEC SEL CLEAR 6MM REV,SpectralAverage,,6.00000E-003,0.43000,0.42000,0.30000,0.77000,6.00000E-002,7.00000E-002,0.00000,3.00000E-002,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.29_SHGC_0.22,64,5,VerySmooth,1.703,0.234,0.129,0.274
+ WindowMaterial:Glazing,BRONZE 6MM,SpectralAverage,,6.00000E-003,0.48200,5.40000E-002,5.40000E-002,0.53400,5.70000E-002,5.70000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,COATED POLY-55,SpectralAverage,,5.10000E-004,0.32000,0.58200,0.59300,0.55100,0.33600,0.37500,0.00000,4.60000E-002,0.72000,0.14000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.29_SHGC_0.17,65,3,VerySmooth,1.761,0.169,8.718E-002,0.114
+ WindowMaterial:Glazing,ECABS-2 COLORED 6MM,SpectralAverage,,6.00000E-003,0.11100,0.17900,0.17900,0.12800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.29_SHGC_0.11,66,3,VerySmooth,1.614,0.119,4.705E-002,0.120
+ WindowMaterial:Glazing,ECREF-2 COLORED 6MM,SpectralAverage,,6.00000E-003,9.90000E-002,0.21900,0.21900,0.15500,7.30000E-002,7.30000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,LOE SPEC SEL CLEAR 6MM REV,SpectralAverage,,6.00000E-003,0.43000,0.42000,0.30000,0.77000,6.00000E-002,7.00000E-002,0.00000,3.00000E-002,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.24_SHGC_0.23,67,3,VerySmooth,1.333,0.283,0.208,0.408
+ WindowMaterial:Glazing,LOE SPEC SEL TINT 6MM,SpectralAverage,,6.00000E-003,0.26000,0.14000,0.41000,0.46000,6.00000E-002,4.00000E-002,0.00000,0.84000,3.00000E-002,0.90000,1.00000,No
+ WindowMaterial:Gas,ARGON 13MM,Argon,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.24_SHGC_0.16,68,3,VerySmooth,1.493,0.158,8.718E-002,0.114
+ WindowMaterial:Glazing,ECABS-2 COLORED 6MM,SpectralAverage,,6.00000E-003,0.11100,0.17900,0.17900,0.12800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,ARGON 13MM,Argon,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.24_SHGC_0.11,69,3,VerySmooth,1.318,0.115,5.180E-002,9.912E-002
+ WindowMaterial:Glazing,ECABS-2 COLORED 6MM,SpectralAverage,,6.00000E-003,0.11100,0.17900,0.17900,0.12800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,ARGON 13MM,Argon,1.270E-002
+ WindowMaterial:Glazing,LOE SPEC SEL CLEAR 6MM REV,SpectralAverage,,6.00000E-003,0.43000,0.42000,0.30000,0.77000,6.00000E-002,7.00000E-002,0.00000,3.00000E-002,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.19_SHGC_0.20,70,5,VerySmooth,1.208,0.222,0.129,0.274
+ WindowMaterial:Glazing,BRONZE 6MM,SpectralAverage,,6.00000E-003,0.48200,5.40000E-002,5.40000E-002,0.53400,5.70000E-002,5.70000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,COATED POLY-55,SpectralAverage,,5.10000E-004,0.32000,0.58200,0.59300,0.55100,0.33600,0.37500,0.00000,4.60000E-002,0.72000,0.14000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.71_SHGC_0.25,71,3,VerySmooth,2.848,0.287,0.160,0.200
+ WindowMaterial:Glazing,REF C CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.20000,0.16000,0.39000,0.22000,0.17000,0.35000,0.00000,0.84000,0.55000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.38_SHGC_0.30,72,3,VerySmooth,2.267,0.300,0.191,0.271
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowMaterial:Gas,ARGON 13MM,Argon,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.36_SHGC_0.35,73,3,VerySmooth,2.272,0.313,0.208,0.408
+ WindowMaterial:Glazing,LOE SPEC SEL TINT 6MM,SpectralAverage,,6.00000E-003,0.26000,0.14000,0.41000,0.46000,6.00000E-002,4.00000E-002,0.00000,0.84000,3.00000E-002,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.30_SHGC_0.40,74,3,VerySmooth,1.761,0.380,0.284,0.444
+ WindowMaterial:Glazing,LOE TINT 6MM,SpectralAverage,,6.00000E-003,0.36000,9.30000E-002,0.20000,0.50000,3.50000E-002,5.40000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.45_SHGC_0.27,75,3,VerySmooth,2.417,0.260,0.146,0.293
+ WindowMaterial:Glazing,GLASS_12116_LAYERAVG,SpectralAverage,,4.75000E-003,0.17187,0.10946,0.21999,0.32277,0.18260,8.16540E-002,0.00000,0.84000,0.53827,1.00035,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.39_SHGC_0.36,76,3,VerySmooth,2.371,0.397,0.284,0.444
+ WindowMaterial:Glazing,LOE TINT 6MM,SpectralAverage,,6.00000E-003,0.36000,9.30000E-002,0.20000,0.50000,3.50000E-002,5.40000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.98_SHGC_0.36,77,1,VerySmooth,5.067,0.400,0.241,0.301
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.17_SHGC_0.39,78,1,VerySmooth,5.067,0.400,0.241,0.301
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.98_SHGC_0.61,79,1,VerySmooth,5.778,0.623,0.487,0.749
+ WindowMaterial:Glazing,GREEN 6MM,SpectralAverage,,6.00000E-003,0.48700,5.60000E-002,5.60000E-002,0.74900,7.00000E-002,7.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.17_SHGC_0.49,80,1,VerySmooth,5.720,0.506,0.431,0.335
+ WindowMaterial:Glazing,REF D CLEAR 6MM,SpectralAverage,,6.00000E-003,0.42900,0.30800,0.37900,0.33400,0.45300,0.50500,0.00000,0.84000,0.82000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.17_SHGC_0.68,81,1,VerySmooth,5.894,0.722,0.635,0.822
+ WindowMaterial:Glazing,GREEN 3MM,SpectralAverage,,3.00000E-003,0.63500,6.30000E-002,6.30000E-002,0.82200,7.50000E-002,7.50000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.98_SHGC_0.45,82,1,VerySmooth,5.067,0.400,0.241,0.301
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.98_SHGC_0.68,83,1,VerySmooth,5.067,0.400,0.241,0.301
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.88_SHGC_0.16,84,1,VerySmooth,4.440,0.202,6.623E-002,8.028E-002
+ WindowMaterial:Glazing,REF A CLEAR LO 6MM,SpectralAverage,,6.00000E-003,6.60000E-002,0.34100,0.49300,8.00000E-002,0.41000,0.37000,0.00000,0.84000,0.40000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.88_SHGC_0.27,85,1,VerySmooth,5.778,0.306,9.905E-002,0.155
+ WindowMaterial:Glazing,ECREF-1 COLORED 6MM,SpectralAverage,,6.00000E-003,9.90000E-002,0.21900,0.21900,0.15500,7.30000E-002,7.30000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.52_SHGC_0.22,86,3,VerySmooth,2.872,0.241,0.120,0.182
+ WindowMaterial:Glazing,REF B CLEAR LO 6MM,SpectralAverage,,6.00000E-003,0.15000,0.22000,0.38000,0.20000,0.23000,0.33000,0.00000,0.84000,0.58000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.44_SHGC_0.20,87,3,VerySmooth,2.447,0.248,0.119,0.163
+ WindowMaterial:Glazing,REF B TINT HI 6MM,SpectralAverage,,6.00000E-003,0.15000,9.00000E-002,0.33000,0.18000,8.00000E-002,0.28000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.39_SHGC_0.38,88,1,VerySmooth,2.193,0.395,0.375,0.530
+ WindowMaterial:Glazing,THEORETICAL GLASS 297,SpectralAverage,,3.00000E-003,0.37504,0.57496,0.57496,0.52970,0.42030,0.42030,0.00000,0.90000,0.90000,1.03561E-002,1.00000,No
+ WindowConstruction,WINDOW_U_0.39_SHGC_0.32,89,1,VerySmooth,2.194,0.336,0.315,0.480
+ WindowMaterial:Glazing,THEORETICAL GLASS 347,SpectralAverage,,3.00000E-003,0.31586,0.63414,0.63414,0.47991,0.47009,0.47009,0.00000,0.90000,0.90000,1.03580E-002,1.00000,No
+ WindowConstruction,WINDOW_U_0.75_SHGC_0.72,90,1,VerySmooth,3.779,0.720,0.680,0.811
+ WindowMaterial:Glazing,PYR B CLEAR 6MM,SpectralAverage,,6.00000E-003,0.68000,9.00000E-002,0.10000,0.81000,0.11000,0.12000,0.00000,0.84000,0.20000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.67_SHGC_0.77,91,1,VerySmooth,3.835,0.768,0.741,0.821
+ WindowMaterial:Glazing,PYR B CLEAR 3MM,SpectralAverage,,3.00000E-003,0.74000,9.00000E-002,0.10000,0.82000,0.11000,0.12000,0.00000,0.84000,0.20000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.56_SHGC_0.76,92,3,VerySmooth,3.122,0.762,0.705,0.812
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.40_SHGC_0.43,93,3,VerySmooth,2.288,0.434,0.359,0.691
+ WindowMaterial:Glazing,LOE SPEC SEL CLEAR 3MM,SpectralAverage,,3.00000E-003,0.45000,0.34000,0.37000,0.78000,7.00000E-002,6.00000E-002,0.00000,0.84000,3.00000E-002,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.40_SHGC_0.45,94,3,VerySmooth,2.262,0.469,0.364,0.657
+ WindowMaterial:Glazing,ECABS-2 BLEACHED 6MM,SpectralAverage,,6.00000E-003,0.81400,8.60000E-002,8.60000E-002,0.84700,9.90000E-002,9.90000E-002,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,LOE SPEC SEL CLEAR 6MM REV,SpectralAverage,,6.00000E-003,0.43000,0.42000,0.30000,0.77000,6.00000E-002,7.00000E-002,0.00000,3.00000E-002,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.60_SHGC_0.25,95,3,VerySmooth,3.511,0.227,7.258E-002,0.284
+ WindowMaterial:Glazing,GLASS_2175_LAYERAVG,SpectralAverage,,8.60000E-003,0.16776,0.21761,0.43798,0.41604,7.87290E-002,0.10654,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0025,Air,2.500E-003
+ WindowMaterial:Glazing,GLASS_2022F_LAYERAVG,SpectralAverage,,3.90000E-003,0.35590,0.39409,0.26565,0.67769,4.27340E-002,5.54700E-002,0.00000,4.60000E-002,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.55_SHGC_0.25,96,3,VerySmooth,3.191,0.218,7.258E-002,0.284
+ WindowMaterial:Glazing,GLASS_2175_LAYERAVG,SpectralAverage,,8.60000E-003,0.16776,0.21761,0.43798,0.41604,7.87290E-002,0.10654,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0032,Air,3.200E-003
+ WindowMaterial:Glazing,GLASS_2022F_LAYERAVG,SpectralAverage,,3.90000E-003,0.35590,0.39409,0.26565,0.67769,4.27340E-002,5.54700E-002,0.00000,4.60000E-002,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.50_SHGC_0.25,97,3,VerySmooth,2.829,0.208,7.258E-002,0.284
+ WindowMaterial:Glazing,GLASS_2175_LAYERAVG,SpectralAverage,,8.60000E-003,0.16776,0.21761,0.43798,0.41604,7.87290E-002,0.10654,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0042,Air,4.200E-003
+ WindowMaterial:Glazing,GLASS_2022F_LAYERAVG,SpectralAverage,,3.90000E-003,0.35590,0.39409,0.26565,0.67769,4.27340E-002,5.54700E-002,0.00000,4.60000E-002,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.47_SHGC_0.40,98,3,VerySmooth,2.810,0.360,0.227,0.471
+ WindowMaterial:Glazing,GLASS_2052_LAYERAVG,SpectralAverage,,8.37000E-003,0.50777,5.42281E-002,5.44931E-002,0.58683,5.80500E-002,5.83970E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0043,Air,4.300E-003
+ WindowMaterial:Glazing,GLASS_2010F_LAYERAVG,SpectralAverage,,2.21000E-003,0.43429,0.41837,0.34107,0.79758,4.35770E-002,5.60310E-002,0.00000,4.22740E-002,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.75_SHGC_0.35,99,3,VerySmooth,3.906,0.353,0.194,0.452
+ WindowMaterial:Glazing,GLASS_2052_LAYERAVG,SpectralAverage,,8.37000E-003,0.50777,5.42281E-002,5.44931E-002,0.58683,5.80500E-002,5.83970E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0018,Air,1.800E-003
+ WindowMaterial:Glazing,GLASS_2027F_LAYERAVG,SpectralAverage,,4.00000E-003,0.36974,0.47007,0.34094,0.76522,5.46000E-002,7.37410E-002,0.00000,3.67500E-002,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.65_SHGC_0.35,100,3,VerySmooth,3.559,0.347,0.194,0.452
+ WindowMaterial:Glazing,GLASS_2052_LAYERAVG,SpectralAverage,,8.37000E-003,0.50777,5.42281E-002,5.44931E-002,0.58683,5.80500E-002,5.83970E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0024,Air,2.400E-003
+ WindowMaterial:Glazing,GLASS_2027F_LAYERAVG,SpectralAverage,,4.00000E-003,0.36974,0.47007,0.34094,0.76522,5.46000E-002,7.37410E-002,0.00000,3.67500E-002,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.55_SHGC_0.35,101,3,VerySmooth,2.956,0.335,0.194,0.452
+ WindowMaterial:Glazing,GLASS_2052_LAYERAVG,SpectralAverage,,8.37000E-003,0.50777,5.42281E-002,5.44931E-002,0.58683,5.80500E-002,5.83970E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0038,Air,3.800E-003
+ WindowMaterial:Glazing,GLASS_2027F_LAYERAVG,SpectralAverage,,4.00000E-003,0.36974,0.47007,0.34094,0.76522,5.46000E-002,7.37410E-002,0.00000,3.67500E-002,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.50_SHGC_0.40,102,3,VerySmooth,2.956,0.335,0.194,0.452
+ WindowMaterial:Glazing,GLASS_2052_LAYERAVG,SpectralAverage,,8.37000E-003,0.50777,5.42281E-002,5.44931E-002,0.58683,5.80500E-002,5.83970E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0038,Air,3.800E-003
+ WindowMaterial:Glazing,GLASS_2027F_LAYERAVG,SpectralAverage,,4.00000E-003,0.36974,0.47007,0.34094,0.76522,5.46000E-002,7.37410E-002,0.00000,3.67500E-002,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_1.16_SHGC_0.25,103,1,VerySmooth,5.778,0.306,9.905E-002,0.155
+ WindowMaterial:Glazing,ECREF-1 COLORED 6MM,SpectralAverage,,6.00000E-003,9.90000E-002,0.21900,0.21900,0.15500,7.30000E-002,7.30000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.08_SHGC_0.25,104,1,VerySmooth,5.778,0.306,9.905E-002,0.155
+ WindowMaterial:Glazing,ECREF-1 COLORED 6MM,SpectralAverage,,6.00000E-003,9.90000E-002,0.21900,0.21900,0.15500,7.30000E-002,7.30000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.29_SHGC_0.45,105,3,VerySmooth,1.614,0.426,0.322,0.634
+ WindowMaterial:Glazing,ECREF-2 BLEACHED 6MM,SpectralAverage,,6.00000E-003,0.69400,0.16800,0.16800,0.81800,0.11000,0.11000,0.00000,0.84000,0.10000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,LOE SPEC SEL CLEAR 6MM REV,SpectralAverage,,6.00000E-003,0.43000,0.42000,0.30000,0.77000,6.00000E-002,7.00000E-002,0.00000,3.00000E-002,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.60_SHGC_0.40,106,1,VerySmooth,5.067,0.400,0.241,0.301
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.05_SHGC_0.40,107,1,VerySmooth,5.067,0.400,0.241,0.301
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.90_SHGC_0.40,108,1,VerySmooth,5.067,0.400,0.241,0.301
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.9_SHGC_0.6,109,1,VerySmooth,5.067,0.400,0.241,0.301
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.75_SHGC_0.6,110,3,VerySmooth,3.122,0.614,0.526,0.551
+ WindowMaterial:Glazing,GREY 3MM,SpectralAverage,,3.00000E-003,0.62600,6.10000E-002,6.10000E-002,0.61100,6.10000E-002,6.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.85_SHGC_0.78,111,1,VerySmooth,4.513,0.781,0.750,0.850
+ WindowMaterial:Glazing,PYR A CLEAR 3MM,SpectralAverage,,3.00000E-003,0.75000,0.10000,0.10000,0.85000,0.12000,0.12000,0.00000,0.84000,0.40000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.30_SHGC_0.68,112,1,VerySmooth,5.894,0.722,0.635,0.822
+ WindowMaterial:Glazing,GREEN 3MM,SpectralAverage,,3.00000E-003,0.63500,6.30000E-002,6.30000E-002,0.82200,7.50000E-002,7.50000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.15_SHGC_0.68,113,1,VerySmooth,5.894,0.722,0.635,0.822
+ WindowMaterial:Glazing,GREEN 3MM,SpectralAverage,,3.00000E-003,0.63500,6.30000E-002,6.30000E-002,0.82200,7.50000E-002,7.50000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.80_SHGC_0.36,114,1,VerySmooth,5.067,0.400,0.241,0.301
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_1.70_SHGC_0.36,115,1,VerySmooth,5.067,0.400,0.241,0.301
+ WindowMaterial:Glazing,REF B CLEAR HI 6MM,SpectralAverage,,6.00000E-003,0.24000,0.16000,0.32000,0.30000,0.16000,0.29000,0.00000,0.84000,0.60000,0.90000,1.00000,No
+ WindowConstruction,WINDOW_U_0.37_SHGC_0.45,116,3,VerySmooth,2.067,0.449,0.359,0.509
+ WindowMaterial:Glazing,GLASS_4321_LAYERAVG,SpectralAverage,,6.18000E-003,0.42595,7.42419E-002,9.99417E-002,0.55965,7.27260E-002,9.48190E-002,0.00000,0.84000,0.27900,0.81400,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0127,Air,1.270E-002
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.41_SHGC_0.38,117,3,VerySmooth,2.245,0.365,0.298,0.452
+ WindowMaterial:Glazing,GLASS_8652_LAYERAVG,SpectralAverage,,3.05900E-003,0.34369,0.29899,0.46211,0.48794,0.20945,0.30683,0.00000,0.84000,0.39000,0.96200,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0127,Air,1.270E-002
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.40_SHGC_0.4,118,3,VerySmooth,2.245,0.365,0.298,0.452
+ WindowMaterial:Glazing,GLASS_8652_LAYERAVG,SpectralAverage,,3.05900E-003,0.34369,0.29899,0.46211,0.48794,0.20945,0.30683,0.00000,0.84000,0.39000,0.96200,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0127,Air,1.270E-002
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.40_SHGC_0.38,119,3,VerySmooth,2.245,0.365,0.298,0.452
+ WindowMaterial:Glazing,GLASS_8652_LAYERAVG,SpectralAverage,,3.05900E-003,0.34369,0.29899,0.46211,0.48794,0.20945,0.30683,0.00000,0.84000,0.39000,0.96200,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0127,Air,1.270E-002
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.39_SHGC_0.40,120,3,VerySmooth,2.216,0.371,0.304,0.471
+ WindowMaterial:Glazing,GLASS_282_LAYERAVG,SpectralAverage,,3.25100E-003,0.35257,0.29562,0.40581,0.51005,0.23746,0.27044,0.00000,0.84000,0.37000,0.94000,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0127,Air,1.270E-002
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.45_SHGC_0.38,121,3,VerySmooth,2.570,0.376,0.291,0.494
+ WindowMaterial:Glazing,GLASS_2532_LAYERAVG,SpectralAverage,,3.06000E-003,0.34082,0.22683,0.27323,0.54381,7.66000E-002,7.94480E-002,0.00000,0.84000,0.67600,0.93300,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0127,Air,1.270E-002
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.44_SHGC_0.40,122,3,VerySmooth,2.499,0.406,0.314,0.643
+ WindowMaterial:Glazing,GLASS_9731_LAYERAVG,SpectralAverage,,1.24800E-002,0.36942,0.20794,0.20340,0.71009,7.11150E-002,7.06960E-002,0.00000,0.84000,0.84000,0.81500,1.00000,No
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.38_SHGC_0.36,123,3,VerySmooth,2.140,0.365,0.301,0.452
+ WindowMaterial:Glazing,GLASS_2531_LAYERAVG,SpectralAverage,,3.06000E-003,0.35056,0.31983,0.36177,0.49092,0.25084,0.23293,0.00000,0.84000,0.45400,0.93400,1.00000,No
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.38_SHGC_0.41,124,3,VerySmooth,2.113,0.407,0.315,0.547
+ WindowMaterial:Glazing,GLASS_4313_LAYERAVG,SpectralAverage,,3.85000E-003,0.37349,7.11426E-002,9.94400E-002,0.60130,7.72250E-002,9.69920E-002,0.00000,0.84000,0.29800,1.00000,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0127,Air,1.270E-002
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.51_SHGC_0.25,125,3,VerySmooth,2.898,0.241,0.142,0.312
+ WindowMaterial:Glazing,GLASS_1576_LAYERAVG,SpectralAverage,,3.05800E-003,0.16764,0.30347,0.18256,0.34199,0.12889,0.12808,0.00000,0.84000,0.86800,0.84600,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0090,Air,9.000E-003
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.54_SHGC_0.25,126,3,VerySmooth,3.064,0.244,0.142,0.312
+ WindowMaterial:Glazing,GLASS_1576_LAYERAVG,SpectralAverage,,3.05800E-003,0.16764,0.30347,0.18256,0.34199,0.12889,0.12808,0.00000,0.84000,0.86800,0.84600,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0070,Air,7.000E-003
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.56_SHGC_0.25,127,3,VerySmooth,3.177,0.247,0.142,0.312
+ WindowMaterial:Glazing,GLASS_1576_LAYERAVG,SpectralAverage,,3.05800E-003,0.16764,0.30347,0.18256,0.34199,0.12889,0.12808,0.00000,0.84000,0.86800,0.84600,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0060,Air,6.000E-003
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.59_SHGC_0.25,128,3,VerySmooth,3.356,0.251,0.142,0.312
+ WindowMaterial:Glazing,GLASS_1576_LAYERAVG,SpectralAverage,,3.05800E-003,0.16764,0.30347,0.18256,0.34199,0.12889,0.12808,0.00000,0.84000,0.86800,0.84600,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0048,Air,4.800E-003
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,WINDOW_U_0.58_SHGC_0.25,129,3,VerySmooth,3.290,0.249,0.142,0.312
+ WindowMaterial:Glazing,GLASS_1576_LAYERAVG,SpectralAverage,,3.05800E-003,0.16764,0.30347,0.18256,0.34199,0.12889,0.12808,0.00000,0.84000,0.86800,0.84600,1.00000,No
+ WindowMaterial:Gas,GAP_1_W_0_0052,Air,5.200E-003
+ WindowMaterial:Glazing,GLASS_102_LAYERAVG,SpectralAverage,,3.04800E-003,0.83385,7.47638E-002,7.48545E-002,0.89926,8.25630E-002,8.25640E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,SKYLIGHT DOUBLE CLEAR,133,3,VerySmooth,3.715,0.720,0.644,0.817
+ WindowMaterial:Glazing,CLEAR 2.5MM,SpectralAverage,,2.50000E-003,0.80000,7.50000E-002,7.50000E-002,0.90100,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 3MM,Air,3.200E-003
+ WindowMaterial:Glazing,CLEAR 2.5MM,SpectralAverage,,2.50000E-003,0.80000,7.50000E-002,7.50000E-002,0.90100,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+! <Shadowing/Sun Position Calculations Annual Simulations>, Calculation Method, Value {days}, Allowable Number Figures in Shadow Overlap {}, Polygon Clipping Algorithm, Sky Diffuse Modeling Algorithm, External Shading Calculation Method, Output External Shading Calculation Results, Disable Self-Shading Within Shading Zone Groups, Disable Self-Shading From Shading Zone Groups to Other Zones
+Shadowing/Sun Position Calculations Annual Simulations,AverageOverDaysInFrequency,20,15000,SutherlandHodgman,SimpleSkyDiffuseModeling,InternalCalculation,No,No,No
+! <Zone/Window Adjacency Daylighting Counts>, Zone Name, Number of Exterior Windows, Number of Exterior Windows in Adjacent Zones
+Zone/Window Adjacency Daylighting Counts, ZONE1 OFFICE,4,0
+Zone/Window Adjacency Daylighting Counts, ZONE2 FINE STORAGE,14,0
+Zone/Window Adjacency Daylighting Counts, ZONE3 BULK STORAGE,32,0
+! <Zone/Window Adjacency Daylighting Matrix>, Zone Name, Number of Adjacent Zones with Windows,Adjacent Zone Names - 1st 100 (max)
+Zone/Window Adjacency Daylighting Matrix, ZONE1 OFFICE,0
+Zone/Window Adjacency Daylighting Matrix, ZONE2 FINE STORAGE,0
+Zone/Window Adjacency Daylighting Matrix, ZONE3 BULK STORAGE,0
+! <Water Heater Information>,Type,Name,Volume {m3},Maximum Capacity {W},Standard Rated Recovery Efficiency, Standard Rated Energy Factor
+! <ZoneInfiltration Airflow Stats Nominal>,Name,Schedule Name,Zone Name, Zone Floor Area {m2}, # Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s-m2},Volume Flow Rate/Exterior Surface Area {m3/s-m2},ACH - Air Changes per Hour,Equation A - Constant Term Coefficient {},Equation B - Temperature Term Coefficient {1/C},Equation C - Velocity Term Coefficient {s/m}, Equation D - Velocity Squared Term Coefficient {s2/m2}
+ ZoneInfiltration Airflow Stats Nominal, OFFICE INFILTRATION,OFFICE INFIL SCHEDULE,ZONE1 OFFICE,236.88,5.0,3.379E-002,1.427E-004,2.202E-004,0.120,0.000,0.000,0.224,0.000
+ ZoneInfiltration Airflow Stats Nominal, OFFICE DOOR INFILTRATION,INFIL_DOOR_OPENING_SCH,ZONE1 OFFICE,236.88,5.0,0.177,7.451E-004,1.150E-003,0.629,1.000,0.000,0.000,0.000
+ ZoneInfiltration Airflow Stats Nominal, FINE STORAGE INFILTRATION,FINE SORAGE INFIL SCHEDULE,ZONE2 FINE STORAGE,1393.41,0.0,0.494,3.545E-004,2.258E-004,0.602,0.000,0.000,0.224,0.000
+ ZoneInfiltration Airflow Stats Nominal, BULK STORAGE INFILTRATION,BULK STORAGE INFIL_BASE SCHEDULE,ZONE3 BULK STORAGE,3204.84,0.0,2.330,7.271E-004,4.749E-004,0.238,0.000,0.000,0.224,0.000
+! <ZoneVentilation Airflow Stats Nominal>,Name,Schedule Name,Zone Name, Zone Floor Area {m2}, # Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s-m2},Volume Flow Rate/person Area {m3/s-person},ACH - Air Changes per Hour,Fan Type {Exhaust;Intake;Natural},Fan Pressure Rise {Pa},Fan Efficiency {},Equation A - Constant Term Coefficient {},Equation B - Temperature Term Coefficient {1/C},Equation C - Velocity Term Coefficient {s/m}, Equation D - Velocity Squared Term Coefficient {s2/m2},Minimum Indoor Temperature{C}/Schedule,Maximum Indoor Temperature{C}/Schedule,Delta Temperature{C}/Schedule,Minimum Outdoor Temperature{C}/Schedule,Maximum Outdoor Temperature{C}/Schedule,Maximum WindSpeed{m/s}
+ ZoneVentilation Airflow Stats Nominal, BULK STORAGE VENTILATION-1,ALWAYS ON SCHEDULE,ZONE3 BULK STORAGE,3204.84,0.0,37.760,1.178E-002,N/A,3.853,Exhaust,31.136,0.5,1.000,0.000,0.000,0.000,29.44,100.00,-100.00,-100.00,100.00,40.00
+ ZoneVentilation Airflow Stats Nominal, BULK STORAGE VENTILATION-2,ALWAYS ON SCHEDULE,ZONE3 BULK STORAGE,3204.84,0.0,0.944,2.945E-004,N/A,9.632E-002,Natural,0.000,1.0,0.000,0.000,0.224,0.000,-73.33,29.44,-100.00,-100.00,100.00,40.00
+! <AirFlow Model>, Simple
+ AirFlow Model, Simple
+! <RoomAir Model>, Zone Name, Mixing/Mundt/UCSDDV/UCSDCV/UCSDUFI/UCSDUFE/User Defined
+RoomAir Model,ZONE1 OFFICE,Mixing/Well-Stirred
+RoomAir Model,ZONE2 FINE STORAGE,Mixing/Well-Stirred
+RoomAir Model,ZONE3 BULK STORAGE,Mixing/Well-Stirred
+! <AirflowNetwork Model:Control>, No Multizone or Distribution/Multizone with Distribution/Multizone without Distribution/Multizone with Distribution only during Fan Operation
+AirflowNetwork Model:Control,NoMultizoneOrDistribution
+! <Zone Volume Capacitance Multiplier>, Sensible Heat Capacity Multiplier, Moisture Capacity Multiplier, Carbon Dioxide Capacity Multiplier, Generic Contaminant Capacity Multiplier
+Zone Volume Capacitance Multiplier,   1.000 ,   1.000,   1.000,   1.000
+! <Load Timesteps in Zone Design Calculation Averaging Window>, Value
+ Load Timesteps in Zone Design Calculation Averaging Window,    4
+! <Heating Sizing Factor Information>, Sizing Factor ID, Value
+ Heating Sizing Factor Information, Global,   1.2000    
+ Heating Sizing Factor Information, Zone ZONE1 OFFICE,   1.2000    
+ Heating Sizing Factor Information, Zone ZONE2 FINE STORAGE,   1.2000    
+ Heating Sizing Factor Information, Zone ZONE3 BULK STORAGE,   1.2000    
+! <Cooling Sizing Factor Information>, Sizing Factor ID, Value
+ Cooling Sizing Factor Information, Global,   1.2000    
+ Cooling Sizing Factor Information, Zone ZONE1 OFFICE,   1.2000    
+ Cooling Sizing Factor Information, Zone ZONE2 FINE STORAGE,   1.2000    
+ Cooling Sizing Factor Information, Zone ZONE3 BULK STORAGE,   1.2000    
+! <Sky Daylight Factors>, MonthAndDay, Zone Name, Window Name, Daylight Fac: Ref Pt #1, Daylight Fac: Ref Pt #2
+ Clear Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE FRONT WALL WINDOW 1,6.5952E-003,8.0267E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE FRONT WALL WINDOW 1,5.8127E-003,7.1771E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE FRONT WALL WINDOW 1,5.6375E-003,6.9467E-004
+ Overcast Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE FRONT WALL WINDOW 1,3.5595E-003,6.3316E-004
+ Clear Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE FRONT WALL WINDOW2,8.1317E-004,7.3537E-003
+ Clear Turbid Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE FRONT WALL WINDOW2,7.4371E-004,6.1244E-003
+ Intermediate Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE FRONT WALL WINDOW2,7.0966E-004,5.9935E-003
+ Overcast Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE FRONT WALL WINDOW2,6.2568E-004,4.7730E-003
+ Clear Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE LEFT WALL WINDOW1,6.1164E-003,4.4853E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE LEFT WALL WINDOW1,4.6008E-003,3.5459E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE LEFT WALL WINDOW1,3.1231E-003,2.7003E-004
+ Overcast Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE LEFT WALL WINDOW1,4.4671E-003,3.8497E-004
+ Clear Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE LEFT WALL WINDOW2,6.3025E-003,4.4924E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE LEFT WALL WINDOW2,4.6856E-003,3.5496E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE LEFT WALL WINDOW2,2.9049E-003,2.6963E-004
+ Overcast Sky Daylight Factors,01/21,ZONE1 OFFICE,OFFICE LEFT WALL WINDOW2,4.4670E-003,3.8497E-004
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_1,9.6493E-005,6.8766E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_1,8.5925E-005,7.1719E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_1,8.4387E-005,8.3197E-004
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_1,1.0902E-004,5.2252E-004
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_6,1.8070E-004,3.4402E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_6,1.5167E-004,3.7567E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_6,1.6736E-004,3.1364E-004
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_6,2.6747E-004,1.6600E-004
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_7,4.0517E-004,1.6068E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_7,3.3863E-004,1.7434E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_7,4.9757E-004,1.3274E-004
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_7,8.9407E-004,8.7160E-005
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_8,7.5860E-004,9.3890E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_8,6.8299E-004,9.9262E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_8,1.1420E-003,8.2090E-005
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_8,1.5146E-003,6.8887E-005
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_9,7.5464E-004,7.0158E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_9,7.7133E-004,7.2489E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_9,9.7538E-004,6.6744E-005
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_9,6.7905E-004,6.3809E-005
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_10,4.0729E-004,6.1008E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_10,4.4293E-004,6.2188E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_10,3.8972E-004,6.1415E-005
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_10,2.0510E-004,6.2125E-005
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_5,1.3990E-003,6.2919E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_5,1.7066E-003,6.4566E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_5,7.6508E-004,6.1952E-005
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_5,2.7049E-004,6.2206E-005
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_4,2.3961E-003,7.6038E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_4,2.7491E-003,7.9833E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_4,2.2769E-003,6.8488E-005
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_4,1.2603E-003,6.4078E-005
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_3,1.8901E-003,1.1603E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_3,1.7947E-003,1.2706E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_3,2.7052E-003,8.9069E-005
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_3,4.0413E-003,6.9984E-005
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_2,6.6444E-004,2.6889E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_2,5.5343E-004,3.1118E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_2,8.2444E-004,1.6919E-004
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_2,1.8407E-003,9.2965E-005
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_14,2.2846E-004,1.0515E-003
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_14,1.8881E-004,1.2777E-003
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_14,2.1464E-004,5.6700E-004
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_14,3.7777E-004,2.0747E-004
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_13,1.0575E-004,2.2531E-003
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_13,9.2934E-005,2.6419E-003
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_13,9.1300E-005,1.8864E-003
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_13,1.2266E-004,8.9017E-004
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_12,7.1234E-005,2.1646E-003
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_12,6.6804E-005,2.1563E-003
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_12,6.6499E-005,2.9519E-003
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_12,7.6524E-005,3.5948E-003
+ Clear Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_11,6.9136E-005,8.0756E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_11,6.5232E-005,7.4700E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_11,6.5216E-005,1.2141E-003
+ Overcast Sky Daylight Factors,01/21,ZONE2 FINE STORAGE,FINESTORAGE_SKYLIGHT_11,7.4271E-005,1.4054E-003
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C1,3.2916E-005,4.5528E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C1,2.9481E-005,3.8842E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C1,2.8140E-005,3.5822E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C1,3.3830E-005,4.9595E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C2,4.3596E-005,3.7609E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C2,3.7376E-005,3.3102E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C2,3.4381E-005,3.1947E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C2,4.6853E-005,3.9886E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C4,3.2475E-005,2.2519E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C4,2.9301E-005,2.1777E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C4,2.8915E-005,2.2388E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C4,3.3818E-005,2.3483E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C2,1.4009E-004,1.0849E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C2,1.5863E-004,1.2151E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C2,1.0025E-004,7.8822E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C2,4.7484E-005,4.0297E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C1,5.4687E-005,2.0979E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C1,5.6145E-005,2.4761E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C1,5.1443E-005,1.2169E-004
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C1,3.4072E-005,5.0321E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C4,6.8080E-005,2.6419E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C4,7.2975E-005,2.6350E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C4,5.6438E-005,2.6241E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C4,3.4060E-005,2.3511E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C3,1.8537E-004,4.3435E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C3,2.1734E-004,4.4694E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C3,1.1068E-004,3.9695E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R1C3,4.7473E-005,2.8596E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C1,7.9379E-005,6.9123E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C1,7.9463E-005,8.4018E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C1,8.4932E-005,3.8704E-004
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C1,5.3588E-005,1.3130E-004
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C2,3.2040E-004,1.9528E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C2,3.6422E-004,2.1655E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C2,2.6302E-004,1.6671E-004
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C2,1.1446E-004,7.8199E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C3,4.6856E-004,5.4249E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C3,5.5628E-004,5.4541E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C3,3.0537E-004,5.4283E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C3,1.1440E-004,3.6754E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C4,1.0041E-004,2.8203E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C4,1.0543E-004,2.7757E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C4,9.5812E-005,2.8701E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R2C4,5.3544E-005,2.5139E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C4,8.4364E-004,6.2925E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C4,9.6188E-004,6.0790E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C4,7.9631E-004,7.1100E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C4,3.9589E-004,5.0224E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C2,6.2821E-004,2.9520E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C2,6.8614E-004,3.1052E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C2,6.9292E-004,3.3702E-004
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C2,3.9633E-004,1.9122E-004
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C3,1.3142E-004,2.9337E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C3,1.3099E-004,2.8418E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C3,1.5477E-004,3.0701E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C3,9.6552E-005,2.7029E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C1,1.0711E-004,1.3230E-003
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C1,1.0211E-004,1.5528E-003
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C1,1.3540E-004,1.1115E-003
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R3C1,9.6693E-005,5.2412E-004
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C4,1.3485E-004,2.9310E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C4,1.2484E-004,2.8015E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C4,1.8546E-004,3.1088E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C4,1.5150E-004,2.8400E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C3,8.5956E-004,6.3601E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C3,8.5838E-004,5.8782E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C3,1.1854E-003,7.7611E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C3,1.2152E-003,6.3282E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C2,7.3909E-004,3.0654E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C2,7.1394E-004,2.9068E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C2,1.0630E-003,4.4843E-004
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C2,1.2175E-003,3.9316E-004
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C1,1.1776E-004,1.3399E-003
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C1,1.0571E-004,1.3669E-003
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C1,1.6272E-004,1.7707E-003
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R4C1,1.5180E-004,1.9922E-003
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C4,1.0537E-004,2.8096E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C4,9.2226E-005,2.6681E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C4,1.4069E-004,2.9455E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C4,1.5068E-004,2.8384E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C1,9.9613E-005,6.2742E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C1,8.5658E-005,5.3822E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C1,1.2553E-004,8.4462E-004
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C1,1.5098E-004,1.9548E-003
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C3,4.5288E-004,5.5344E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C3,3.9006E-004,4.9712E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C3,6.4359E-004,6.5492E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C3,1.1968E-003,6.3108E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C2,4.3309E-004,2.0712E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C2,3.6807E-004,1.7917E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C2,5.9449E-004,2.9985E-004
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R5C2,1.1990E-003,3.8963E-004
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C1,6.9798E-005,2.2072E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C1,5.9216E-005,1.7852E-004
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C1,7.1246E-005,2.3657E-004
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C1,9.5539E-005,5.0818E-004
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C2,1.8319E-004,1.1190E-004
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C2,1.4846E-004,9.3546E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C2,1.9368E-004,1.2755E-004
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C2,3.8575E-004,1.8769E-004
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C3,4.3245E-005,2.7630E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C3,3.7217E-005,2.5669E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C3,3.4921E-005,2.5834E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R8C3,4.6842E-005,2.8478E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C4,7.0026E-005,2.6187E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C4,6.0200E-005,2.4901E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C4,7.7653E-005,2.6733E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C4,9.5400E-005,2.6992E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C1,4.6371E-005,8.8699E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C1,4.0019E-005,7.2126E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C1,4.0613E-005,7.4527E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C1,5.2986E-005,1.2810E-004
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C2,8.0804E-005,6.0557E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C2,6.6042E-005,5.1174E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C2,6.7272E-005,5.5052E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C2,1.1191E-004,7.6898E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C4,4.5727E-005,2.4197E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C4,3.9880E-005,2.3173E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C4,4.2846E-005,2.4186E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C4,5.2943E-005,2.5101E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C3,1.8276E-004,4.3799E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C3,1.4930E-004,3.9146E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C3,2.0421E-004,4.6359E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R6C3,3.8533E-004,4.9912E-005
+ Clear Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C3,7.9968E-005,3.4077E-005
+ Clear Turbid Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C3,6.5738E-005,3.0896E-005
+ Intermediate Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C3,6.9457E-005,3.2780E-005
+ Overcast Sky Daylight Factors,01/21,ZONE3 BULK STORAGE,SKYLIGHT_R7C3,1.1185E-004,3.6530E-005
+! <Zone Sizing Information>, Zone Name, Load Type, Calc Des Load {W}, User Des Load {W}, Calc Des Air Flow Rate {m3/s}, User Des Air Flow Rate {m3/s}, Design Day Name, Date/Time of Peak, Temperature at Peak {C}, Humidity Ratio at Peak {kgWater/kgDryAir}, Floor Area {m2}, # Occupants, Calc Outdoor Air Flow Rate {m3/s}, Calc DOAS Heat Addition Rate {W}
+ Zone Sizing Information, ZONE1 OFFICE, Cooling, 4329.52962, 5195.43554, 0.35623, 0.42748, XIAN ANN CLG .4% CONDNS DB=>MWB, 7/21 16:30:00, 34.98000, 1.37016E-002, 236.87965, 5.00000, 0.10228, 0.00000
+ Zone Sizing Information, ZONE1 OFFICE, Heating, 10198.37553, 12238.05064, 0.28606, 0.34327, XIAN ANN HTG WIND 99% CONDNS WS=>MCDB, 1/21 09:00:00, 1.80000, 4.51151E-003, 236.87965, 5.00000, 0.10228, 0.00000
+ Zone Sizing Information, ZONE2 FINE STORAGE, Cooling, 786.88011, 944.25613, 5.05265E-002, 0.42471, XIAN ANN CLG .4% CONDNS DB=>MWB, 7/21 17:00:00, 34.61200, 1.37016E-002, 1393.40969, 0.00000, 0.42471, 0.00000
+ Zone Sizing Information, ZONE2 FINE STORAGE, Heating, 23946.50372, 28735.80446, 0.56627, 0.67953, XIAN ANN HTG WIND 99% CONDNS WS=>MCDB, 1/21 08:00:00, 1.80000, 4.51151E-003, 1393.40969, 0.00000, 0.42471, 0.00000
+ Zone Sizing Information, ZONE3 BULK STORAGE, Cooling, 0.00000, 0.00000, 0.00000, 0.97684, XIAN ANN CLG .4% CONDNS DB=>MWB, , 35.90000, 1.37016E-002, 3204.84228, 0.00000, 0.97684, 0.00000
+ Zone Sizing Information, ZONE3 BULK STORAGE, Heating, 17655.13662, 21186.16395, 0.42517, 0.97684, XIAN ANN HTG 99.6% CONDNS DB, 1/21 24:00:00, -6.30000, 2.32121E-003, 3204.84228, 0.00000, 0.97684, 0.00000
+! <System Sizing Information>, System Name, Load Type, Peak Load Kind, User Design Capacity, Calc Des Air Flow Rate [m3/s], User Des Air Flow Rate [m3/s], Design Day Name, Date/Time of Peak
+ System Sizing Information, PSZ-OFFICE, Cooling, Sensible, 7525.42, 0.42748, 0.42748, XIAN ANN CLG .4% CONDNS DB=>MWB, 7/21 05:00:00
+ System Sizing Information, PSZ-OFFICE, Heating, Sensible, 14412.41, 0.34327, 0.34327, XIAN ANN HTG 99.6% CONDNS DB, 1/21 09:00:00
+ System Sizing Information, PSZ-FINE STORAGE, Cooling, Sensible, 11619.14, 0.42471, 0.42471, XIAN ANN CLG .4% CONDNS DB=>MWB, 7/21 05:00:00
+ System Sizing Information, PSZ-FINE STORAGE, Heating, Sensible, 35386.19, 0.67953, 0.67953, XIAN ANN HTG 99.6% CONDNS DB, 1/21 08:00:00
+! <Component Sizing Information>, Component Type, Component Name, Input Field Description, Value
+ Component Sizing Information, AirTerminal:SingleDuct:Uncontrolled, ZONE1 OFFICE DIRECT AIR, Design Size Maximum Air Flow Rate [m3/s], 0.42748
+ Component Sizing Information, AirTerminal:SingleDuct:Uncontrolled, ZONE2 FINE STORAGE DIRECT AIR, Design Size Maximum Air Flow Rate [m3/s], 0.67953
+ Component Sizing Information, ZoneHVAC:UnitHeater, ZONE3UNITHEATER, Design Size Maximum Supply Air Flow Rate [m3/s], 0.97684
+ Component Sizing Information, Fan:ConstantVolume, ZONE3UNITHEATERFAN, Design Size Maximum Flow Rate [m3/s], 0.97684
+ Component Sizing Information, Coil:Heating:Fuel, ZONE3UNITHEATERHEATINGCOIL, Design Size Nominal Capacity [W], 40563.27330
+ Component Sizing Information, ZoneHVAC:HighTemperatureRadiant, ZONE3HIRADIANT, User-Specified Heating Design Capacity [W], 21186.16395
+ Component Sizing Information, AirLoopHVAC, PSZ-OFFICE, Sum of Air Terminal Maximum Heating Flow Rates [m3/s], 0.42748
+ Component Sizing Information, AirLoopHVAC, PSZ-OFFICE, Sum of Air Terminal Minimum Heating Flow Rates [m3/s], 0.42748
+ Component Sizing Information, AirLoopHVAC, PSZ-OFFICE, Sum of Air Terminal Maximum Flow Rates [m3/s], 0.42748
+ Component Sizing Information, AirLoopHVAC, PSZ-OFFICE, Adjusted Heating Design Air Flow Rate [m3/s], 0.42748
+ Component Sizing Information, AirLoopHVAC, PSZ-OFFICE, Adjusted Cooling Design Air Flow Rate [m3/s], 0.42748
+ Component Sizing Information, AirLoopHVAC, PSZ-OFFICE, Adjusted Main Design Air Flow Rate [m3/s], 0.42748
+ Component Sizing Information, AirLoopHVAC, PSZ-OFFICE, User Heating Air Flow Ratio [], 1.00000
+ Component Sizing Information, AirLoopHVAC, PSZ-OFFICE, Calculated Heating Air Flow Ratio [], 1.00000
+ Component Sizing Information, AirLoopHVAC, PSZ-FINE STORAGE, Sum of Air Terminal Maximum Heating Flow Rates [m3/s], 0.67953
+ Component Sizing Information, AirLoopHVAC, PSZ-FINE STORAGE, Sum of Air Terminal Minimum Heating Flow Rates [m3/s], 0.67953
+ Component Sizing Information, AirLoopHVAC, PSZ-FINE STORAGE, Sum of Air Terminal Maximum Flow Rates [m3/s], 0.67953
+ Component Sizing Information, AirLoopHVAC, PSZ-FINE STORAGE, Adjusted Heating Design Air Flow Rate [m3/s], 0.67953
+ Component Sizing Information, AirLoopHVAC, PSZ-FINE STORAGE, Adjusted Cooling Design Air Flow Rate [m3/s], 0.67953
+ Component Sizing Information, AirLoopHVAC, PSZ-FINE STORAGE, Adjusted Main Design Air Flow Rate [m3/s], 0.67953
+ Component Sizing Information, AirLoopHVAC, PSZ-FINE STORAGE, User Heating Air Flow Ratio [], 1.00000
+ Component Sizing Information, AirLoopHVAC, PSZ-FINE STORAGE, Calculated Heating Air Flow Ratio [], 1.00000
+ Component Sizing Information, AirLoopHVAC, PSZ-OFFICE, Design Supply Air Flow Rate [m3/s], 0.42748
+ Component Sizing Information, AirLoopHVAC, PSZ-FINE STORAGE, Design Supply Air Flow Rate [m3/s], 0.67953
+ Component Sizing Information, Controller:OutdoorAir, PSZ-OFFICE OA CONTROLLER, Maximum Outdoor Air Flow Rate [m3/s], 0.42748
+ Component Sizing Information, Controller:OutdoorAir, PSZ-OFFICE OA CONTROLLER, Minimum Outdoor Air Flow Rate [m3/s], 0.10228
+ Component Sizing Information, Fan:ConstantVolume, PSZ-OFFICE SUPPLY FAN, Design Size Maximum Flow Rate [m3/s], 0.42748
+ Component Sizing Information, Coil:Heating:Fuel, PSZ-OFFICE HEATING COIL, Design Size Nominal Capacity [W], 17364.42087
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-OFFICE COOLING COIL, Design Size High Speed Rated Air Flow Rate [m3/s], 0.42748
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-OFFICE COOLING COIL, User-Specified High Speed Rated Air Flow Rate [m3/s], 0.54619
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-OFFICE COOLING COIL, Design Size High Speed Gross Rated Total Cooling Capacity [W], 13104.45460
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-OFFICE COOLING COIL, User-Specified High Speed Gross Rated Total Cooling Capacity [W], 9041.45000
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-OFFICE COOLING COIL, User-Specified High Speed Rated Sensible Heat Ratio, 0.79866
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-OFFICE COOLING COIL, Design Size Low Speed Rated Air Flow Rate [m3/s], 0.18205
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-OFFICE COOLING COIL, User-Specified Low Speed Rated Air Flow Rate [m3/s], 0.36413
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-OFFICE COOLING COIL, Design Size Low Speed Gross Rated Total Cooling Capacity [W], 3013.51529
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-OFFICE COOLING COIL, User-Specified Low Speed Gross Rated Total Cooling Capacity [W], 4520.72500
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-OFFICE COOLING COIL, User-Specified Low Speed Gross Rated Sensible Heat Ratio, 0.79866
+ Component Sizing Information, Controller:OutdoorAir, PSZ-FINE STORAGE OA CONTROLLER, Maximum Outdoor Air Flow Rate [m3/s], 0.67953
+ Component Sizing Information, Controller:OutdoorAir, PSZ-FINE STORAGE OA CONTROLLER, Minimum Outdoor Air Flow Rate [m3/s], 0.42471
+ Component Sizing Information, Fan:ConstantVolume, PSZ-FINE STORAGE SUPPLY FAN, Design Size Maximum Flow Rate [m3/s], 0.67953
+ Component Sizing Information, Coil:Heating:Fuel, PSZ-FINE STORAGE HEATING COIL, Design Size Nominal Capacity [W], 35386.18878
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-FINE STORAGE COOLING COIL, Design Size High Speed Rated Air Flow Rate [m3/s], 0.67953
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-FINE STORAGE COOLING COIL, User-Specified High Speed Rated Air Flow Rate [m3/s], 1.05822
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-FINE STORAGE COOLING COIL, Design Size High Speed Gross Rated Total Cooling Capacity [W], 39183.87452
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-FINE STORAGE COOLING COIL, User-Specified High Speed Gross Rated Total Cooling Capacity [W], 17790.44000
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-FINE STORAGE COOLING COIL, User-Specified High Speed Rated Sensible Heat Ratio, 0.79301
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-FINE STORAGE COOLING COIL, Design Size Low Speed Rated Air Flow Rate [m3/s], 0.35270
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-FINE STORAGE COOLING COIL, User-Specified Low Speed Rated Air Flow Rate [m3/s], 0.70548
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-FINE STORAGE COOLING COIL, Design Size Low Speed Gross Rated Total Cooling Capacity [W], 5929.55365
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-FINE STORAGE COOLING COIL, User-Specified Low Speed Gross Rated Total Cooling Capacity [W], 8895.22000
+ Component Sizing Information, Coil:Cooling:DX:TwoSpeed, PSZ-FINE STORAGE COOLING COIL, User-Specified Low Speed Gross Rated Sensible Heat Ratio, 0.79301
+Water Heater Information,WaterHeater:Mixed,ELECTRIC TANK,7.5708E-002,6154.7,0.999,0.5184
+! <Environment>,Environment Name,Environment Type, Start Date, End Date, Start DayOfWeek, Duration {#days}, Source:Start DayOfWeek,  Use Daylight Saving, Use Holidays, Apply Weekend Holiday Rule,  Use Rain Values, Use Snow Values
+! <Environment:Special Days>, Special Day Name, Special Day Type, Source, Start Date, Duration {#days}
+! <Environment:Daylight Saving>, Daylight Saving Indicator, Source, Start Date, End Date
+! <Environment:WarmupDays>, NumberofWarmupDays
+Environment,XIAN ANN HTG 99.6% CONDNS DB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+! <Environment:Design Day Data>, Max Dry-Bulb Temp {C}, Temp Range {dC}, Temp Range Ind Type, Hum Ind Value at Max Temp, Hum Ind Type,Pressure {Pa}, Wind Direction {deg CW from N}, Wind Speed {m/s}, Clearness, Rain, Snow
+! <Environment:Design Day Misc>,DayOfYear,ASHRAE A Coeff,ASHRAE B Coeff,ASHRAE C Coeff,Solar Constant-Annual Variation,Eq of Time {minutes}, Solar Declination Angle {deg}, Solar Model
+Environment:Design Day Data,-6.30,0.00,DefaultMultipliers,96640,70,1.1,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  7
+! <Tabular Report>,Style,Unit Conversion
+Tabular Report,Commaandhtml,commaandhtml
+! <Warmup Convergence Information>,Zone Name,Environment Type/Name,Average Warmup Temperature Difference {deltaC},Std Dev Warmup Temperature Difference {deltaC},Max Temperature Pass/Fail Convergence,Min Temperature Pass/Fail Convergence,Average Warmup Load Difference {W},Std Dev Warmup Load Difference {W},Heating Load Pass/Fail Convergence,Cooling Load Pass/Fail Convergence
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN HTG 99.6% CONDNS DB,0.1145998869,0.4660209358,Pass,Pass,0.1720325066,0.8153075502,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN HTG 99.6% CONDNS DB,1.2025655429E-006,1.8518095426E-006,Pass,Pass,3.4663060375E-003,1.1763984405E-002,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN HTG 99.6% CONDNS DB,1.6530986344E-006,4.7484480921E-006,Pass,Pass,1.2906372495E-002,6.1553254597E-002,Pass,Pass
+Environment,XIAN ANN HTG 99% CONDNS DB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,-4.80,0.00,DefaultMultipliers,96640,70,1.1,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  8
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN HTG 99% CONDNS DB,0.1145997810,0.4645643284,Pass,Pass,0.1781096149,0.8475698929,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN HTG 99% CONDNS DB,1.2545301184E-006,2.0322317552E-006,Pass,Pass,3.4012569506E-003,1.1317622850E-002,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN HTG 99% CONDNS DB,1.6255111213E-006,4.8217328787E-006,Pass,Pass,1.7481632240E-002,8.4872100410E-002,Pass,Pass
+Environment,XIAN ANN HUM_N 99.6% CONDNS DP=>MCDB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,1.60,0.00,DefaultMultipliers,96640,70,1.1,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays, 12
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN HUM_N 99.6% CONDNS DP=>MCDB,0.1145988642,0.4097526078,Pass,Pass,0.1156147644,0.6687133449,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN HUM_N 99.6% CONDNS DP=>MCDB,1.4221555791E-006,2.0350013974E-006,Pass,Pass,3.0636978895E-003,8.7248166585E-003,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN HUM_N 99.6% CONDNS DP=>MCDB,6.8156926647E-003,1.5089890168E-002,Pass,Pass,2.8307743891E-002,0.1497187240,Pass,Pass
+Environment,XIAN ANN HUM_N 99% CONDNS DP=>MCDB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,1.70,0.00,DefaultMultipliers,96640,70,1.1,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN HUM_N 99% CONDNS DP=>MCDB,0.1145988334,0.4094153736,Pass,Pass,0.1162270025,0.6733969796,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN HUM_N 99% CONDNS DP=>MCDB,1.4885878459E-006,2.0274989555E-006,Pass,Pass,3.0874010887E-003,8.7424554385E-003,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN HUM_N 99% CONDNS DP=>MCDB,1.0661810498E-002,1.8335237746E-002,Pass,Pass,5.9240077040E-002,0.2263047264,Pass,Pass
+Environment,XIAN ANN HTG WIND 99.6% CONDNS WS=>MCDB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,3.00,0.00,DefaultMultipliers,96640,70,7.3,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  7
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN HTG WIND 99.6% CONDNS WS=>MCDB,0.1145980545,0.4099913186,Pass,Pass,0.1403927601,0.8530753323,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN HTG WIND 99.6% CONDNS WS=>MCDB,2.2480405486E-003,1.0514990484E-002,Pass,Pass,8.1925365380E-003,3.7552296901E-002,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN HTG WIND 99.6% CONDNS WS=>MCDB,1.8994440020E-006,5.5349667769E-006,Pass,Pass,5.0319041396E-003,2.3211636212E-002,Pass,Pass
+Environment,XIAN ANN HTG WIND 99% CONDNS WS=>MCDB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,1.80,0.00,DefaultMultipliers,96640,70,6.3,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  7
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN HTG WIND 99% CONDNS WS=>MCDB,0.1145983780,0.4551794502,Pass,Pass,0.1627350936,0.8102986882,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN HTG WIND 99% CONDNS WS=>MCDB,2.4102919002E-003,1.1033105639E-002,Pass,Pass,7.7271066333E-003,3.4861977499E-002,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN HTG WIND 99% CONDNS WS=>MCDB,1.8538291930E-006,5.4323015610E-006,Pass,Pass,4.0400720448E-003,1.8605801035E-002,Pass,Pass
+Environment,XIAN ANN CLG .4% CONDNS DB=>MWB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,35.90,9.20,DefaultMultipliers,96640,70,2.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN CLG .4% CONDNS DB=>MWB,8.6822106005E-002,0.2534808149,Pass,Pass,0.1396753042,0.5195637766,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN CLG .4% CONDNS DB=>MWB,3.9948577976E-002,4.4222789188E-002,Pass,Pass,0.4242221920,2.0726133965,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN CLG .4% CONDNS DB=>MWB,8.2496477573E-002,6.4310123926E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment,XIAN ANN CLG 1% CONDNS DB=>MWB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,34.40,9.20,DefaultMultipliers,96640,70,2.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN CLG 1% CONDNS DB=>MWB,8.1298585379E-002,0.2668694825,Pass,Pass,0.1906780334,0.8943826146,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN CLG 1% CONDNS DB=>MWB,4.7378072073E-002,4.8532212282E-002,Pass,Pass,0.2366292305,0.6587836455,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN CLG 1% CONDNS DB=>MWB,8.3141900767E-002,6.3514354987E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment,XIAN ANN CLG 2% CONDNS DB=>MWB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,33.00,9.20,DefaultMultipliers,96640,70,2.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN CLG 2% CONDNS DB=>MWB,7.6950233069E-002,0.2512999178,Pass,Pass,0.2689150803,1.5696006013,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN CLG 2% CONDNS DB=>MWB,5.4466093650E-002,5.1986756453E-002,Pass,Pass,0.1199604334,0.2707367694,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN CLG 2% CONDNS DB=>MWB,8.3895148922E-002,6.4097803593E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment,XIAN ANN CLG .4% CONDNS WB=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,32.00,9.20,DefaultMultipliers,96640,70,2.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN CLG .4% CONDNS WB=>MDB,7.3414274645E-002,0.2363237589,Pass,Pass,0.1582752183,0.5097073044,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN CLG .4% CONDNS WB=>MDB,5.9052877143E-002,5.4399031656E-002,Pass,Pass,9.7804193245E-002,7.9657498036E-002,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN CLG .4% CONDNS WB=>MDB,8.4391761234E-002,6.5151963756E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment,XIAN ANN CLG 1% CONDNS WB=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,30.90,9.20,DefaultMultipliers,96640,70,2.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN CLG 1% CONDNS WB=>MDB,6.8666384572E-002,0.1976495433,Pass,Pass,0.3241051374,0.8297917163,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN CLG 1% CONDNS WB=>MDB,6.4951810338E-002,5.4481543008E-002,Pass,Pass,0.4839296607,3.2059113473,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN CLG 1% CONDNS WB=>MDB,8.5313855719E-002,6.5729653640E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment,XIAN ANN CLG 2% CONDNS WB=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,30.00,9.20,DefaultMultipliers,96640,70,2.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN CLG 2% CONDNS WB=>MDB,6.5744575394E-002,0.1844507159,Pass,Pass,0.2909405099,0.9080170483,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN CLG 2% CONDNS WB=>MDB,6.9980617351E-002,5.1306042637E-002,Pass,Pass,0.1815593004,0.4034562710,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN CLG 2% CONDNS WB=>MDB,8.6079013090E-002,6.3931998988E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment,XIAN ANN CLG .4% CONDNS DP=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,29.90,9.20,DefaultMultipliers,96640,70,2.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN CLG .4% CONDNS DP=>MDB,6.5494393060E-002,0.1833370581,Pass,Pass,0.3623945314,1.2859083502,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN CLG .4% CONDNS DP=>MDB,7.0642237996E-002,5.1110723639E-002,Pass,Pass,0.2371392425,0.7389166763,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN CLG .4% CONDNS DP=>MDB,8.6294420276E-002,6.3931353363E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment,XIAN ANN CLG 1% CONDNS DP=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,28.90,9.20,DefaultMultipliers,96640,70,2.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN CLG 1% CONDNS DP=>MDB,6.3449613148E-002,0.2072813052,Pass,Pass,0.3247142560,1.2391044082,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN CLG 1% CONDNS DP=>MDB,7.5285731368E-002,4.8376689984E-002,Pass,Pass,0.2142681546,0.6726611727,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN CLG 1% CONDNS DP=>MDB,8.7044424493E-002,6.4354381578E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment,XIAN ANN CLG 2% CONDNS DP=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,28.10,9.20,DefaultMultipliers,96640,70,2.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN CLG 2% CONDNS DP=>MDB,6.1844042910E-002,0.2036361601,Pass,Pass,0.3497468617,1.7367216255,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN CLG 2% CONDNS DP=>MDB,7.5947035501E-002,4.9355413720E-002,Pass,Pass,0.2443163976,0.8269653879,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN CLG 2% CONDNS DP=>MDB,8.7663622642E-002,6.4983759093E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment,XIAN ANN CLG .4% CONDNS ENTH=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,32.00,9.20,DefaultMultipliers,96640,70,2.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN CLG .4% CONDNS ENTH=>MDB,8.8002638973E-002,0.1943940321,Pass,Pass,0.1500888331,0.5383036425,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN CLG .4% CONDNS ENTH=>MDB,5.9016837471E-002,5.2928698655E-002,Pass,Pass,0.1018697468,7.7078708819E-002,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN CLG .4% CONDNS ENTH=>MDB,8.4874557119E-002,6.5261006567E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment,XIAN ANN CLG 1% CONDNS ENTH=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,31.10,9.20,DefaultMultipliers,96640,70,2.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN CLG 1% CONDNS ENTH=>MDB,8.2976571264E-002,0.1981122073,Pass,Pass,0.4159526990,1.2192351546,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN CLG 1% CONDNS ENTH=>MDB,6.3846871327E-002,5.4024614925E-002,Pass,Pass,0.1714759825,0.2822347317,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN CLG 1% CONDNS ENTH=>MDB,8.5616901927E-002,6.5681742426E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment,XIAN ANN CLG 2% CONDNS ENTH=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,30.10,9.20,DefaultMultipliers,96640,70,2.9,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,SizingPeriod: XIAN ANN CLG 2% CONDNS ENTH=>MDB,7.2723536239E-002,0.1895016973,Pass,Pass,0.3400674414,1.0859557652,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,SizingPeriod: XIAN ANN CLG 2% CONDNS ENTH=>MDB,6.9264569086E-002,5.2220826380E-002,Pass,Pass,0.2619718821,0.8850820238,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,SizingPeriod: XIAN ANN CLG 2% CONDNS ENTH=>MDB,8.6527303150E-002,6.4557732246E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment,RUN PERIOD 1,WeatherFileRunPeriod,01/01/2007,12/31/2007,Monday,365,Use RunPeriod Specified Day,No,No,Yes,Yes,Yes
+Environment:Daylight Saving,Yes,InputFile,03/11,11/04
+Environment:Special Days,NEW YEARS DAY,Holiday,InputFile,01/01,  1
+Environment:Special Days,ML KING BIRTHDAY,Holiday,InputFile,01/15,  1
+Environment:Special Days,WASHINGTON'S BIRTHDAY,Holiday,InputFile,02/19,  1
+Environment:Special Days,MEMORIAL DAY,Holiday,InputFile,05/28,  1
+Environment:Special Days,FOURTH OF JULY,Holiday,InputFile,07/04,  1
+Environment:Special Days,LABOR DAY,Holiday,InputFile,09/03,  1
+Environment:Special Days,COLUMBUS DAY,Holiday,InputFile,10/08,  1
+Environment:Special Days,VETERANS DAY,Holiday,InputFile,11/12,  1
+Environment:Special Days,THANKSGIVING DAY,Holiday,InputFile,11/22,  1
+Environment:Special Days,CHRISTMAS DAY,Holiday,InputFile,12/25,  1
+Environment:WarmupDays,  6
+ Warmup Convergence Information,ZONE1 OFFICE,RunPeriod: RUN PERIOD 1,0.3628855606,0.2303042320,Pass,Pass,0.8615539981,1.2434860357,Pass,Pass
+ Warmup Convergence Information,ZONE2 FINE STORAGE,RunPeriod: RUN PERIOD 1,0.6304623987,0.3501386946,Pass,Pass,20.2927427953,180.9719596554,Pass,Pass
+ Warmup Convergence Information,ZONE3 BULK STORAGE,RunPeriod: RUN PERIOD 1,6.4435698494E-002,5.8053276728E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+! <Program Control Information:Threads/Parallel Sims>, Threading Supported,Maximum Number of Threads, Env Set Threads (OMP_NUM_THREADS), EP Env Set Threads (EP_OMP_NUM_THREADS), IDF Set Threads, Number of Threads Used (Interior Radiant Exchange), Number Nominal Surfaces, Number Parallel Sims
+Program Control:Threads/Parallel Sims, No,1, N/A, N/A, N/A, N/A, N/A, N/A
+End of Data

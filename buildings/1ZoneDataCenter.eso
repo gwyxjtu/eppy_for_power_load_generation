@@ -1,0 +1,13 @@
+Program Version,EnergyPlus, Version 8.8.0-7c3bbe4830, YMD=2022.02.08 22:47
+1,5,Environment Title[],Latitude[deg],Longitude[deg],Time Zone[],Elevation[m]
+2,6,Day of Simulation[],Month[],Day of Month[],DST Indicator[1=yes 0=no],Hour[],StartMinute[],EndMinute[],DayType
+3,3,Cumulative Day of Simulation[],Month[],Day of Month[],DST Indicator[1=yes 0=no],DayType  ! When Daily Report Variables Requested
+4,2,Cumulative Days of Simulation[],Month[]  ! When Monthly Report Variables Requested
+5,1,Cumulative Days of Simulation[] ! When Run Period Report Variables Requested
+6,1,Environment,Site Outdoor Air Drybulb Temperature [C] !TimeStep
+7,1,Environment,Site Outdoor Air Wetbulb Temperature [C] !Hourly
+8,1,Environment,Site Outdoor Air Relative Humidity [%] !TimeStep
+92,1,EMS,CRAC total system Power [W] !TimeStep
+94,1,EMS,PUE [] !TimeStep
+167,1,MAIN ZONE,Zone Air Temperature [C] !TimeStep
+351,1,Whole Building,Facility Total Electric Demand Power [W] !TimeStep

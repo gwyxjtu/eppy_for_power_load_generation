@@ -1,0 +1,132 @@
+  Processing Data Dictionary -- Complete
+  Maximum number of Alpha Args=        4500
+  Maximum number of Numeric Args=       21040
+  Number of Object Definitions=         789
+  Number of Section Definitions=           0
+  Total Number of Alpha Fields=       18957
+  Total Number of Numeric Fields=       40266
+  Total Number of Fields=       59223
+  Processing Input Data File -- Start
+  Echo of input lines is off. May be activated by setting the environmental variable DISPLAYINPUTINAUDIT=YES
+   ** Severe  ** IP: IDF line~542 Error detected in Object=RUNPERIOD, name=RUN PERIOD 1
+   **   ~~~   ** Field [End Month] is required but was blank
+   ** Severe  ** IP: IDF line~542 Invalid Number in Numeric Field#3 (End Month), value=, in RUNPERIOD=RUN PERIOD 1
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=73.10700, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_3_WALL_NORTH_WINDOW1
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=58.24165, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_3_WALL_NORTH_WINDOW2
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=43.37630, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_3_WALL_NORTH_WINDOW3
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=28.51095, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_3_WALL_NORTH_WINDOW4
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=13.64560, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_3_WALL_NORTH_WINDOW5
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=73.10720, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_2_WALL_EAST_WINDOW1
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=73.10720, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_2_WALL_EAST_WINDOW2
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=73.10720, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_2_WALL_EAST_WINDOW3
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=0.00000, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_1_WALL_SOUTH_WINDOW1
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=14.86535, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_1_WALL_SOUTH_WINDOW2
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=29.73070, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_1_WALL_SOUTH_WINDOW3
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=44.59605, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_1_WALL_SOUTH_WINDOW4
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=59.46140, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_1_WALL_SOUTH_WINDOW5
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=0.00000, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_4_WALL_WEST_WINDOW1
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=0.00000, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_4_WALL_WEST_WINDOW2
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=0.00000, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_4_WALL_WEST_WINDOW3
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=73.10700, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_MID_ZN_3_WALL_NORTH_WINDOW
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=73.10720, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_MID_ZN_2_WALL_EAST_WINDOW
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=0.00000, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_MID_ZN_1_WALL_SOUTH_WINDOW
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=0.00000, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_MID_ZN_4_WALL_WEST_WINDOW
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=73.10700, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_TOP_ZN_3_WALL_NORTH_WINDOW
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=73.10720, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_TOP_ZN_2_WALL_EAST_WINDOW
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=0.00000, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_TOP_ZN_1_WALL_SOUTH_WINDOW
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=0.00000, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_TOP_ZN_4_WALL_WEST_WINDOW
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=0.00000, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_4_WALL_WEST_DOOR1
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=0.00000, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_4_WALL_WEST_DOOR2
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=13.81074, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_1_WALL_SOUTH_DOOR1
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=28.64370, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_1_WALL_SOUTH_DOOR2
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=43.52628, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_1_WALL_SOUTH_DOOR3
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=58.43038, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_1_WALL_SOUTH_DOOR4
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=73.10720, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_2_WALL_EAST_DOOR1
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=73.10720, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_2_WALL_EAST_DOOR2
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=59.29441, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_3_WALL_NORTH_DOOR1
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=44.43838, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_3_WALL_NORTH_DOOR2
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=29.61253, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_3_WALL_NORTH_DOOR3
+   ** Severe  ** Out of range value Numeric Field#3 (Number of Vertices), value=14.73725, range={>=3 and <=4}, in FENESTRATIONSURFACE:DETAILED=PERIMETER_BOT_ZN_3_WALL_NORTH_DOOR4
+   ** Severe  ** IP: IDF line~12284 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=BASEMENT DIRECT AIR, in ZONEHVAC:EQUIPMENTLIST=BASEMENT EQUIPMENT
+   ** Severe  ** IP: IDF line~12294 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=CORE_BOTTOM VAV BOX, in ZONEHVAC:EQUIPMENTLIST=CORE_BOTTOM EQUIPMENT
+   ** Severe  ** IP: IDF line~12304 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=CORE_MID VAV BOX, in ZONEHVAC:EQUIPMENTLIST=CORE_MID EQUIPMENT
+   ** Severe  ** IP: IDF line~12314 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=CORE_TOP VAV BOX, in ZONEHVAC:EQUIPMENTLIST=CORE_TOP EQUIPMENT
+   ** Severe  ** IP: IDF line~12324 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=PERIMETER_BOT_ZN_3 VAV BOX, in ZONEHVAC:EQUIPMENTLIST=PERIMETER_BOT_ZN_3 EQUIPMENT
+   ** Severe  ** IP: IDF line~12334 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=PERIMETER_BOT_ZN_2 VAV BOX, in ZONEHVAC:EQUIPMENTLIST=PERIMETER_BOT_ZN_2 EQUIPMENT
+   ** Severe  ** IP: IDF line~12344 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=PERIMETER_BOT_ZN_1 VAV BOX, in ZONEHVAC:EQUIPMENTLIST=PERIMETER_BOT_ZN_1 EQUIPMENT
+   ** Severe  ** IP: IDF line~12354 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=PERIMETER_BOT_ZN_4 VAV BOX, in ZONEHVAC:EQUIPMENTLIST=PERIMETER_BOT_ZN_4 EQUIPMENT
+   ** Severe  ** IP: IDF line~12364 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=PERIMETER_MID_ZN_3 VAV BOX, in ZONEHVAC:EQUIPMENTLIST=PERIMETER_MID_ZN_3 EQUIPMENT
+   ** Severe  ** IP: IDF line~12374 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=PERIMETER_MID_ZN_2 VAV BOX, in ZONEHVAC:EQUIPMENTLIST=PERIMETER_MID_ZN_2 EQUIPMENT
+   ** Severe  ** IP: IDF line~12384 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=PERIMETER_MID_ZN_1 VAV BOX, in ZONEHVAC:EQUIPMENTLIST=PERIMETER_MID_ZN_1 EQUIPMENT
+   ** Severe  ** IP: IDF line~12394 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=PERIMETER_MID_ZN_4 VAV BOX, in ZONEHVAC:EQUIPMENTLIST=PERIMETER_MID_ZN_4 EQUIPMENT
+   ** Severe  ** IP: IDF line~12404 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=PERIMETER_TOP_ZN_3 VAV BOX, in ZONEHVAC:EQUIPMENTLIST=PERIMETER_TOP_ZN_3 EQUIPMENT
+   ** Severe  ** IP: IDF line~12414 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=PERIMETER_TOP_ZN_2 VAV BOX, in ZONEHVAC:EQUIPMENTLIST=PERIMETER_TOP_ZN_2 EQUIPMENT
+   ** Severe  ** IP: IDF line~12424 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=PERIMETER_TOP_ZN_1 VAV BOX, in ZONEHVAC:EQUIPMENTLIST=PERIMETER_TOP_ZN_1 EQUIPMENT
+   ** Severe  ** IP: IDF line~12434 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=PERIMETER_TOP_ZN_4 VAV BOX, in ZONEHVAC:EQUIPMENTLIST=PERIMETER_TOP_ZN_4 EQUIPMENT
+   ** Severe  ** IP: IDF line~12444 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=DATACENTER BASEMENT DIRECT AIR, in ZONEHVAC:EQUIPMENTLIST=DATACENTER BASEMENT EQUIPMENT
+   ** Severe  ** IP: IDF line~12454 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=DATACENTER BOT DIRECT AIR, in ZONEHVAC:EQUIPMENTLIST=DATACENTER BOT EQUIPMENT
+   ** Severe  ** IP: IDF line~12464 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=DATACENTER MID DIRECT AIR, in ZONEHVAC:EQUIPMENTLIST=DATACENTER MID EQUIPMENT
+   ** Severe  ** IP: IDF line~12474 Invalid Number in Numeric Field#1 (Zone Equipment 1 Cooling Sequence), value=DATACENTER TOP DIRECT AIR, in ZONEHVAC:EQUIPMENTLIST=DATACENTER TOP EQUIPMENT
+   ** Severe  ** IP: IDF line~15871 Invalid Number in Numeric Field#3 (Design Water Outlet Temperature), value=AUTOSIZE, in BOILER:HOTWATER=HEATSYS1 BOILER
+   ** Severe  ** IP: IDF line~15887 Invalid Number in Numeric Field#3 (Design Water Outlet Temperature), value=AUTOSIZE, in BOILER:HOTWATER=DUMMY BOILER
+  Processing Input Data File -- Complete
+  Maximum number of Alpha IDF Args=          94
+  Maximum number of Numeric IDF Args=          26
+  Number of IDF "Lines"=        1537
+  Number of Defaulted Fields=         183
+  Number of Fields with Defaults=        3245
+  Number of Autosized Fields=         279
+  Number of Autosizable Fields =         345
+  Number of Autocalculated Fields=         209
+  Number of Autocalculatable Fields =         456
+  Processing Schedule Input -- Start
+  Processing Schedule Input -- Complete
+  Processing Schedule Input -- Start
+  Processing Schedule Input -- Complete
+ MonthlyInputCount=          19
+ sizeMonthlyInput=          25
+ MonthlyFieldSetInputCount=         144
+ sizeMonthlyFieldSetInput=         200
+ MonthlyTablesCount=         168
+ MonthlyColumnsCount=         928
+ sizeReportName=         100
+ numReportName=          14
+ sizeSubTable=         100
+ numSubTable=          69
+ sizeColumnTag=         800
+ numColumnTag=         580
+ sizeTableEntry=       12800
+ numTableEntry=        8624
+ sizeCompSizeTableEntry=         200
+ numCompSizeTableEntry=         164
+ NumOfRVariable=       19185
+ NumOfRVariable(Total)=       19185
+ NumOfRVariable(Actual)=         705
+ NumOfRVariable(Summed)=         572
+ NumOfRVariable(Meter)=         196
+ NumOfIVariable=         840
+ NumOfIVariable(Total)=         840
+ NumOfIVariable(Actual)=           0
+ NumOfIVariable(Summed)=           0
+ MaxRVariable=        1000
+ MaxIVariable=          10
+ NumEnergyMeters=         160
+ NumVarMeterArrays=         197
+ maxUniqueKeyCount=        1500
+ maxNumberOfFigures=           1
+ MAXHCArrayBounds=          10
+ MaxVerticesPerSurface=           4
+ NumReportList=         500
+ InstMeterCacheSize=        1000
+ ClippingAlgorithm=SutherlandHodgman
+ MonthlyFieldSetInputCount=         144
+ NumConsideredOutputVariables=         181
+ MaxConsideredOutputVariables=       10000
+ numActuatorsUsed=          17
+ numEMSActuatorsAvailable=        2719
+ maxEMSActuatorsAvailable=        4000
+ numInternalVariablesUsed=          15
+ numEMSInternalVarsAvailable=         463
+ maxEMSInternalVarsAvailable=        1000
+ NumOfNodeConnections=         440
+ MaxNumOfNodeConnections=        1000

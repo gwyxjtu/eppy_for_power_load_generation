@@ -1,0 +1,28 @@
+!-Generator IDFEditor 1.50
+!-Option SortedOrder
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+
+!-   ===========  ALL OBJECTS IN CLASS: SITE:LOCATION ===========
+
+! The following Location and Design Day data are produced as possible from the indicated data source.
+! Wind Speeds follow the indicated design conditions rather than traditional values (6.7 m/s heating, 3.35 m/s cooling)
+! No special attempts at re-creating or determining missing data parts (e.g. Wind speed or direction)
+! are done.  Therefore, you should look at the data and fill in any incorrect values as you desire.
+Site:Location,
+    Congwu_Fujian_CHN Design_Conditions,  !- Name
+    24.90,                   !- Latitude {deg}
+    118.92,                  !- Longitude {deg}
+    8.00,                    !- Time Zone {hr}
+    21.80;                   !- Elevation {m}
+
+
+!-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLE ===========
+
+Output:Variable,
+    *,                       !- Key Value
+    Site Direct Solar Radiation Rate per Area,  !- Variable Name
+    Hourly;                  !- Reporting Frequency
+

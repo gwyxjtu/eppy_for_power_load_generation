@@ -1,0 +1,28 @@
+Program Version,EnergyPlus, Version 8.8.0-7c3bbe4830, YMD=2022.02.08 22:47,IDD_Version 8.8.0
+   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
+   **   ~~~   ** ..Location object=DENVER CENTENNIAL CO USA WMO=724666
+   **   ~~~   ** ..Weather File Location=Tampa International Ap FL USA TMY3 WMO#=722110
+   **   ~~~   ** ..due to location differences, Latitude difference=[11.77] degrees, Longitude difference=[22.65] degrees.
+   **   ~~~   ** ..Time Zone difference=[2.0] hour(s), Elevation difference=[99.67] percent, [1787.00] meters.
+   ** Warning ** SetUpDesignDay: Entered DesignDay Barometric Pressure=81560 differs by more than 10% from Standard Barometric Pressure=101253.
+   **   ~~~   ** ...occurs in DesignDay=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, Standard Pressure (based on elevation) will be used.
+   ** Warning ** SetUpDesignDay: Entered DesignDay Barometric Pressure=81560 differs by more than 10% from Standard Barometric Pressure=101253.
+   **   ~~~   ** ...occurs in DesignDay=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, Standard Pressure (based on elevation) will be used.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Severe  ** ExternalInterface: Did not find file "socket.cfg".
+   **   ~~~   ** This file needs to be in same directory as in.idf.
+   **   ~~~   ** Check the documentation for the ExternalInterface.
+   **  Fatal  ** Error in ExternalInterface: Check EnergyPlus *.err file.
+   ...Summary of Errors that led to program termination:
+   ..... Reference severe error count=1
+   ..... Last severe error=ExternalInterface: Did not find file "socket.cfg".
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 1 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Terminated--Fatal Error Detected. 3 Warning; 1 Severe Errors; Elapsed Time=00hr 00min  1.51sec

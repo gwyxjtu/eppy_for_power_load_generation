@@ -1,0 +1,275 @@
+****  Begin EMS Language Processor Error and Trace Output  *** 
+<Erl program name, line #, line text, result, occurance timing information ... >
+CALCSCOP,Line 1,SET CPAIR = @CPAIRFNWTDB WOUT_SUPPLYFAN  TOUT_SUPPLYFAN,1004.858589, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 2,SET FANSENSHEAT = (MDOT_SUPPLYFAN * CPAIR ) * DELTAT_SUPPLYFAN,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 3,SET NUMERATOR = QDOT_DXCOIL_SENS - FANSENSHEAT,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 4,SET DENOMINATOR = POWER_DX_COIL_ELEC + POWER_SUPPLYFAN_ELEC,776.782162, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 5,SET SCOP = NUMERATOR / DENOMINATOR,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 6,SET QDOTNETSENS = NUMERATOR,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 7,SET POWERCRAC = DENOMINATOR,776.782162, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCPUE,Line 1,IF IT_EQUIP_POWER > 0.0,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCPUE,Line 3,ELSE,1.000000, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCPUE,Line 4,SET PUE = 0.0,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCPUE,Line 5,ENDIF,, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 1,SET CPAIR = @CPAIRFNWTDB WOUT_SUPPLYFAN  TOUT_SUPPLYFAN,1004.858589, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 2,SET FANSENSHEAT = (MDOT_SUPPLYFAN * CPAIR ) * DELTAT_SUPPLYFAN,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 3,SET NUMERATOR = QDOT_DXCOIL_SENS - FANSENSHEAT,21140.634728, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 4,SET DENOMINATOR = POWER_DX_COIL_ELEC + POWER_SUPPLYFAN_ELEC,2819.618908, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 5,SET SCOP = NUMERATOR / DENOMINATOR,7.497692, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 6,SET QDOTNETSENS = NUMERATOR,21140.634728, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 7,SET POWERCRAC = DENOMINATOR,2819.618908, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCPUE,Line 1,IF IT_EQUIP_POWER > 0.0,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCPUE,Line 3,ELSE,1.000000, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCPUE,Line 4,SET PUE = 0.0,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCPUE,Line 5,ENDIF,, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 00:05 - 00:10
+CALCSCOP,Line 1,SET CPAIR = @CPAIRFNWTDB WOUT_SUPPLYFAN  TOUT_SUPPLYFAN,1004.858589, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 24:00 - 24:05
+CALCSCOP,Line 2,SET FANSENSHEAT = (MDOT_SUPPLYFAN * CPAIR ) * DELTAT_SUPPLYFAN,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 24:00 - 24:05
+CALCSCOP,Line 3,SET NUMERATOR = QDOT_DXCOIL_SENS - FANSENSHEAT,66209.880884, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 24:00 - 24:05
+CALCSCOP,Line 4,SET DENOMINATOR = POWER_DX_COIL_ELEC + POWER_SUPPLYFAN_ELEC,6576.237106, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 24:00 - 24:05
+CALCSCOP,Line 5,SET SCOP = NUMERATOR / DENOMINATOR,10.068049, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 24:00 - 24:05
+CALCSCOP,Line 6,SET QDOTNETSENS = NUMERATOR,66209.880884, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 24:00 - 24:05
+CALCSCOP,Line 7,SET POWERCRAC = DENOMINATOR,6576.237106, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 24:00 - 24:05
+CALCPUE,Line 1,IF IT_EQUIP_POWER > 0.0,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 24:00 - 24:05
+CALCPUE,Line 3,ELSE,1.000000, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 24:00 - 24:05
+CALCPUE,Line 4,SET PUE = 0.0,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 24:00 - 24:05
+CALCPUE,Line 5,ENDIF,, During Warmup, Occurrence info=DENVER CENTENNIAL ANN HTG 99.6% CONDNS DB, 12/21 24:00 - 24:05
+CALCSCOP,Line 1,SET CPAIR = @CPAIRFNWTDB WOUT_SUPPLYFAN  TOUT_SUPPLYFAN,1004.858589, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 2,SET FANSENSHEAT = (MDOT_SUPPLYFAN * CPAIR ) * DELTAT_SUPPLYFAN,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 3,SET NUMERATOR = QDOT_DXCOIL_SENS - FANSENSHEAT,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 4,SET DENOMINATOR = POWER_DX_COIL_ELEC + POWER_SUPPLYFAN_ELEC,776.782162, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 5,SET SCOP = NUMERATOR / DENOMINATOR,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 6,SET QDOTNETSENS = NUMERATOR,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 7,SET POWERCRAC = DENOMINATOR,776.782162, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCPUE,Line 1,IF IT_EQUIP_POWER > 0.0,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCPUE,Line 3,ELSE,1.000000, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCPUE,Line 4,SET PUE = 0.0,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCPUE,Line 5,ENDIF,, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 1,SET CPAIR = @CPAIRFNWTDB WOUT_SUPPLYFAN  TOUT_SUPPLYFAN,1004.858589, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 2,SET FANSENSHEAT = (MDOT_SUPPLYFAN * CPAIR ) * DELTAT_SUPPLYFAN,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 3,SET NUMERATOR = QDOT_DXCOIL_SENS - FANSENSHEAT,26633.329611, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 4,SET DENOMINATOR = POWER_DX_COIL_ELEC + POWER_SUPPLYFAN_ELEC,6319.923611, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 5,SET SCOP = NUMERATOR / DENOMINATOR,4.214185, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 6,SET QDOTNETSENS = NUMERATOR,26633.329611, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 7,SET POWERCRAC = DENOMINATOR,6319.923611, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCPUE,Line 1,IF IT_EQUIP_POWER > 0.0,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCPUE,Line 3,ELSE,1.000000, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCPUE,Line 4,SET PUE = 0.0,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCPUE,Line 5,ENDIF,, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 00:05 - 00:10
+CALCSCOP,Line 1,SET CPAIR = @CPAIRFNWTDB WOUT_SUPPLYFAN  TOUT_SUPPLYFAN,1004.858589, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 24:00 - 24:05
+CALCSCOP,Line 2,SET FANSENSHEAT = (MDOT_SUPPLYFAN * CPAIR ) * DELTAT_SUPPLYFAN,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 24:00 - 24:05
+CALCSCOP,Line 3,SET NUMERATOR = QDOT_DXCOIL_SENS - FANSENSHEAT,36169.674400, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 24:00 - 24:05
+CALCSCOP,Line 4,SET DENOMINATOR = POWER_DX_COIL_ELEC + POWER_SUPPLYFAN_ELEC,11299.382459, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 24:00 - 24:05
+CALCSCOP,Line 5,SET SCOP = NUMERATOR / DENOMINATOR,3.201031, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 24:00 - 24:05
+CALCSCOP,Line 6,SET QDOTNETSENS = NUMERATOR,36169.674400, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 24:00 - 24:05
+CALCSCOP,Line 7,SET POWERCRAC = DENOMINATOR,11299.382459, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 24:00 - 24:05
+CALCPUE,Line 1,IF IT_EQUIP_POWER > 0.0,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 24:00 - 24:05
+CALCPUE,Line 3,ELSE,1.000000, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 24:00 - 24:05
+CALCPUE,Line 4,SET PUE = 0.0,0.0, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 24:00 - 24:05
+CALCPUE,Line 5,ENDIF,, During Warmup, Occurrence info=DENVER CENTENNIAL ANN CLG 1% CONDNS DB=>MWB, 07/21 24:00 - 24:05
+CALCSCOP,Line 1,SET CPAIR = @CPAIRFNWTDB WOUT_SUPPLYFAN  TOUT_SUPPLYFAN,1004.858589, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 2,SET FANSENSHEAT = (MDOT_SUPPLYFAN * CPAIR ) * DELTAT_SUPPLYFAN,0.0, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 3,SET NUMERATOR = QDOT_DXCOIL_SENS - FANSENSHEAT,0.0, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 4,SET DENOMINATOR = POWER_DX_COIL_ELEC + POWER_SUPPLYFAN_ELEC,776.782162, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 5,SET SCOP = NUMERATOR / DENOMINATOR,0.0, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 6,SET QDOTNETSENS = NUMERATOR,0.0, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 7,SET POWERCRAC = DENOMINATOR,776.782162, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCPUE,Line 1,IF IT_EQUIP_POWER > 0.0,0.0, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCPUE,Line 3,ELSE,1.000000, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCPUE,Line 4,SET PUE = 0.0,0.0, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCPUE,Line 5,ENDIF,, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 1,SET CPAIR = @CPAIRFNWTDB WOUT_SUPPLYFAN  TOUT_SUPPLYFAN,1004.858589, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 2,SET FANSENSHEAT = (MDOT_SUPPLYFAN * CPAIR ) * DELTAT_SUPPLYFAN,0.0, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 3,SET NUMERATOR = QDOT_DXCOIL_SENS - FANSENSHEAT,60877.897212, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 4,SET DENOMINATOR = POWER_DX_COIL_ELEC + POWER_SUPPLYFAN_ELEC,24558.246075, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 5,SET SCOP = NUMERATOR / DENOMINATOR,2.478918, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 6,SET QDOTNETSENS = NUMERATOR,60877.897212, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 7,SET POWERCRAC = DENOMINATOR,24558.246075, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCPUE,Line 1,IF IT_EQUIP_POWER > 0.0,0.0, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCPUE,Line 3,ELSE,1.000000, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCPUE,Line 4,SET PUE = 0.0,0.0, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCPUE,Line 5,ENDIF,, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 00:05 - 00:10
+CALCSCOP,Line 1,SET CPAIR = @CPAIRFNWTDB WOUT_SUPPLYFAN  TOUT_SUPPLYFAN,1004.858589, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 24:00 - 24:05
+CALCSCOP,Line 2,SET FANSENSHEAT = (MDOT_SUPPLYFAN * CPAIR ) * DELTAT_SUPPLYFAN,0.0, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 24:00 - 24:05
+CALCSCOP,Line 3,SET NUMERATOR = QDOT_DXCOIL_SENS - FANSENSHEAT,32512.776692, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 24:00 - 24:05
+CALCSCOP,Line 4,SET DENOMINATOR = POWER_DX_COIL_ELEC + POWER_SUPPLYFAN_ELEC,13726.126102, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 24:00 - 24:05
+CALCSCOP,Line 5,SET SCOP = NUMERATOR / DENOMINATOR,2.368678, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 24:00 - 24:05
+CALCSCOP,Line 6,SET QDOTNETSENS = NUMERATOR,32512.776692, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 24:00 - 24:05
+CALCSCOP,Line 7,SET POWERCRAC = DENOMINATOR,13726.126102, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 24:00 - 24:05
+CALCPUE,Line 1,IF IT_EQUIP_POWER > 0.0,0.0, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 24:00 - 24:05
+CALCPUE,Line 3,ELSE,1.000000, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 24:00 - 24:05
+CALCPUE,Line 4,SET PUE = 0.0,0.0, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 24:00 - 24:05
+CALCPUE,Line 5,ENDIF,, During Warmup, Occurrence info=Tampa International Ap FL USA TMY3 WMO#=722110, 07/01 24:00 - 24:05
+! <EnergyManagementSystem:Actuator Available>, Component Unique Name, Component Type,  Control Type, Units
+EnergyManagementSystem:Actuator Available,Environment,Weather Data,Outdoor Dry Bulb,[C]
+EnergyManagementSystem:Actuator Available,Environment,Weather Data,Outdoor Dew Point,[C]
+EnergyManagementSystem:Actuator Available,Environment,Weather Data,Outdoor Relative Humidity,[%]
+EnergyManagementSystem:Actuator Available,Environment,Weather Data,Diffuse Solar,[W/m2]
+EnergyManagementSystem:Actuator Available,Environment,Weather Data,Direct Solar,[W/m2]
+EnergyManagementSystem:Actuator Available,Environment,Weather Data,Wind Speed,[m/s]
+EnergyManagementSystem:Actuator Available,Environment,Weather Data,Wind Direction,[deg]
+EnergyManagementSystem:Actuator Available,SYSTEM AVAILABILITY SCHEDULE,Schedule:Compact,Schedule Value,[ ]
+EnergyManagementSystem:Actuator Available,ZONE CONTROL TYPE SCHED,Schedule:Compact,Schedule Value,[ ]
+EnergyManagementSystem:Actuator Available,SUPPLY AIR SETPOINT SCHEDULE,Schedule:Compact,Schedule Value,[ ]
+EnergyManagementSystem:Actuator Available,DATA CENTER CPU LOADING SCHEDULE,Schedule:Compact,Schedule Value,[ ]
+EnergyManagementSystem:Actuator Available,DATA CENTER OPERATION SCHEDULE,Schedule:Constant,Schedule Value,[ ]
+EnergyManagementSystem:Actuator Available,C5 - 4 IN HW CONCRETE,Material,Surface Property Solar Absorptance,[ ]
+EnergyManagementSystem:Actuator Available,C5 - 4 IN HW CONCRETE,Material,Surface Property Thermal Absorptance,[ ]
+EnergyManagementSystem:Actuator Available,C5 - 4 IN HW CONCRETE,Material,Surface Property Visible Absorptance,[ ]
+EnergyManagementSystem:Actuator Available,R13LAYER,Material,Surface Property Solar Absorptance,[ ]
+EnergyManagementSystem:Actuator Available,R13LAYER,Material,Surface Property Thermal Absorptance,[ ]
+EnergyManagementSystem:Actuator Available,R13LAYER,Material,Surface Property Visible Absorptance,[ ]
+EnergyManagementSystem:Actuator Available,R31LAYER,Material,Surface Property Solar Absorptance,[ ]
+EnergyManagementSystem:Actuator Available,R31LAYER,Material,Surface Property Thermal Absorptance,[ ]
+EnergyManagementSystem:Actuator Available,R31LAYER,Material,Surface Property Visible Absorptance,[ ]
+EnergyManagementSystem:Actuator Available,ZN001:WALL001,Surface,Interior Surface Convection Heat Transfer Coefficient,[W/m2-K]
+EnergyManagementSystem:Actuator Available,ZN001:WALL001,Surface,Exterior Surface Convection Heat Transfer Coefficient,[W/m2-K]
+EnergyManagementSystem:Actuator Available,ZN001:WALL002,Surface,Interior Surface Convection Heat Transfer Coefficient,[W/m2-K]
+EnergyManagementSystem:Actuator Available,ZN001:WALL002,Surface,Exterior Surface Convection Heat Transfer Coefficient,[W/m2-K]
+EnergyManagementSystem:Actuator Available,ZN001:WALL003,Surface,Interior Surface Convection Heat Transfer Coefficient,[W/m2-K]
+EnergyManagementSystem:Actuator Available,ZN001:WALL003,Surface,Exterior Surface Convection Heat Transfer Coefficient,[W/m2-K]
+EnergyManagementSystem:Actuator Available,ZN001:WALL004,Surface,Interior Surface Convection Heat Transfer Coefficient,[W/m2-K]
+EnergyManagementSystem:Actuator Available,ZN001:WALL004,Surface,Exterior Surface Convection Heat Transfer Coefficient,[W/m2-K]
+EnergyManagementSystem:Actuator Available,ZN001:FLR001,Surface,Interior Surface Convection Heat Transfer Coefficient,[W/m2-K]
+EnergyManagementSystem:Actuator Available,ZN001:FLR001,Surface,Exterior Surface Convection Heat Transfer Coefficient,[W/m2-K]
+EnergyManagementSystem:Actuator Available,ZN001:ROOF001,Surface,Interior Surface Convection Heat Transfer Coefficient,[W/m2-K]
+EnergyManagementSystem:Actuator Available,ZN001:ROOF001,Surface,Exterior Surface Convection Heat Transfer Coefficient,[W/m2-K]
+EnergyManagementSystem:Actuator Available,ZN001:WALL001,Surface,Construction State,[ ]
+EnergyManagementSystem:Actuator Available,ZN001:WALL002,Surface,Construction State,[ ]
+EnergyManagementSystem:Actuator Available,ZN001:WALL003,Surface,Construction State,[ ]
+EnergyManagementSystem:Actuator Available,ZN001:WALL004,Surface,Construction State,[ ]
+EnergyManagementSystem:Actuator Available,ZN001:FLR001,Surface,Construction State,[ ]
+EnergyManagementSystem:Actuator Available,ZN001:ROOF001,Surface,Construction State,[ ]
+EnergyManagementSystem:Actuator Available,ZN001:WALL001,Surface,Outdoor Air Drybulb Temperature,[C]
+EnergyManagementSystem:Actuator Available,ZN001:WALL001,Surface,Outdoor Air Wetbulb Temperature,[C]
+EnergyManagementSystem:Actuator Available,ZN001:WALL001,Surface,Outdoor Air Wind Speed,[m/s]
+EnergyManagementSystem:Actuator Available,ZN001:WALL001,Surface,Outdoor Air Wind Direction,[degree]
+EnergyManagementSystem:Actuator Available,ZN001:WALL002,Surface,Outdoor Air Drybulb Temperature,[C]
+EnergyManagementSystem:Actuator Available,ZN001:WALL002,Surface,Outdoor Air Wetbulb Temperature,[C]
+EnergyManagementSystem:Actuator Available,ZN001:WALL002,Surface,Outdoor Air Wind Speed,[m/s]
+EnergyManagementSystem:Actuator Available,ZN001:WALL002,Surface,Outdoor Air Wind Direction,[degree]
+EnergyManagementSystem:Actuator Available,ZN001:WALL003,Surface,Outdoor Air Drybulb Temperature,[C]
+EnergyManagementSystem:Actuator Available,ZN001:WALL003,Surface,Outdoor Air Wetbulb Temperature,[C]
+EnergyManagementSystem:Actuator Available,ZN001:WALL003,Surface,Outdoor Air Wind Speed,[m/s]
+EnergyManagementSystem:Actuator Available,ZN001:WALL003,Surface,Outdoor Air Wind Direction,[degree]
+EnergyManagementSystem:Actuator Available,ZN001:WALL004,Surface,Outdoor Air Drybulb Temperature,[C]
+EnergyManagementSystem:Actuator Available,ZN001:WALL004,Surface,Outdoor Air Wetbulb Temperature,[C]
+EnergyManagementSystem:Actuator Available,ZN001:WALL004,Surface,Outdoor Air Wind Speed,[m/s]
+EnergyManagementSystem:Actuator Available,ZN001:WALL004,Surface,Outdoor Air Wind Direction,[degree]
+EnergyManagementSystem:Actuator Available,ZN001:ROOF001,Surface,Outdoor Air Drybulb Temperature,[C]
+EnergyManagementSystem:Actuator Available,ZN001:ROOF001,Surface,Outdoor Air Wetbulb Temperature,[C]
+EnergyManagementSystem:Actuator Available,ZN001:ROOF001,Surface,Outdoor Air Wind Speed,[m/s]
+EnergyManagementSystem:Actuator Available,ZN001:ROOF001,Surface,Outdoor Air Wind Direction,[degree]
+EnergyManagementSystem:Actuator Available,MAIN ZONE,Zone,Outdoor Air Drybulb Temperature,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE,Zone,Outdoor Air Wetbulb Temperature,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE,Zone,Outdoor Air Wind Speed,[m/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE,Zone,Outdoor Air Wind Direction,[degree]
+EnergyManagementSystem:Actuator Available,MAIN ZONE,Zone Temperature Control,Heating Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE,Zone Temperature Control,Cooling Setpoint,[C]
+EnergyManagementSystem:Actuator Available,EC PLUG FAN 1,Fan,Fan Air Mass Flow Rate,[kg/s]
+EnergyManagementSystem:Actuator Available,EC PLUG FAN 1,Fan,Fan Pressure Rise,[Pa]
+EnergyManagementSystem:Actuator Available,EC PLUG FAN 1,Fan,Fan Total Efficiency,[fraction]
+EnergyManagementSystem:Actuator Available,EC PLUG FAN 1,Fan,Fan Autosized Air Flow Rate,[m3/s]
+EnergyManagementSystem:Actuator Available,MAIN COOLING COIL 1,Coil:Cooling:DX:SingleSpeed,Autosized Rated Air Flow Rate,[m3/s]
+EnergyManagementSystem:Actuator Available,MAIN COOLING COIL 1,Coil:Cooling:DX:SingleSpeed,Autosized Rated Sensible Heat Ratio,[W/W]
+EnergyManagementSystem:Actuator Available,MAIN COOLING COIL 1,Coil:Cooling:DX:SingleSpeed,Autosized Rated Total Cooling Capacity,[W]
+EnergyManagementSystem:Actuator Available,LIEBERT ECONOPHASE QUADRATIC FIT,Curve,Curve Result,[unknown]
+EnergyManagementSystem:Actuator Available,DATA CENTER SERVERS POWER FLOADTEMP,Curve,Curve Result,[unknown]
+EnergyManagementSystem:Actuator Available,DATA CENTER SERVERS AIRFLOW FLOADTEMP,Curve,Curve Result,[unknown]
+EnergyManagementSystem:Actuator Available,DATA CENTER RECIRCULATION FLOADTEMP,Curve,Curve Result,[unknown]
+EnergyManagementSystem:Actuator Available,HPACCOOLCAPFFF,Curve,Curve Result,[unknown]
+EnergyManagementSystem:Actuator Available,HPACCOOLEIRFFF,Curve,Curve Result,[unknown]
+EnergyManagementSystem:Actuator Available,HPACCOOLPLFFPLR,Curve,Curve Result,[unknown]
+EnergyManagementSystem:Actuator Available,ECM FANPOWER FFLOW,Curve,Curve Result,[unknown]
+EnergyManagementSystem:Actuator Available,UPS EFFICIENCY FPLR,Curve,Curve Result,[unknown]
+EnergyManagementSystem:Actuator Available,COOL CAP MOD FUNC OF TEMPERATURE,Curve,Curve Result,[unknown]
+EnergyManagementSystem:Actuator Available,LIEBERT ECONOPHASE EIR FUNC T,Curve,Curve Result,[unknown]
+EnergyManagementSystem:Actuator Available,SUPPLY INLET NODE,System Node Setpoint,Temperature Setpoint,[C]
+EnergyManagementSystem:Actuator Available,SUPPLY INLET NODE,System Node Setpoint,Temperature Minimum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,SUPPLY INLET NODE,System Node Setpoint,Temperature Maximum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,SUPPLY INLET NODE,System Node Setpoint,Humidity Ratio Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,SUPPLY INLET NODE,System Node Setpoint,Humidity Ratio Maximum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,SUPPLY INLET NODE,System Node Setpoint,Humidity Ratio Minimum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,SUPPLY INLET NODE,System Node Setpoint,Mass Flow Rate Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,SUPPLY INLET NODE,System Node Setpoint,Mass Flow Rate Maximum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,SUPPLY INLET NODE,System Node Setpoint,Mass Flow Rate Minimum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN COOLING COIL 1 OUTLET NODE,System Node Setpoint,Temperature Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN COOLING COIL 1 OUTLET NODE,System Node Setpoint,Temperature Minimum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN COOLING COIL 1 OUTLET NODE,System Node Setpoint,Temperature Maximum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN COOLING COIL 1 OUTLET NODE,System Node Setpoint,Humidity Ratio Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN COOLING COIL 1 OUTLET NODE,System Node Setpoint,Humidity Ratio Maximum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN COOLING COIL 1 OUTLET NODE,System Node Setpoint,Humidity Ratio Minimum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN COOLING COIL 1 OUTLET NODE,System Node Setpoint,Mass Flow Rate Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN COOLING COIL 1 OUTLET NODE,System Node Setpoint,Mass Flow Rate Maximum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN COOLING COIL 1 OUTLET NODE,System Node Setpoint,Mass Flow Rate Minimum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,SUPPLY OUTLET NODE,System Node Setpoint,Temperature Setpoint,[C]
+EnergyManagementSystem:Actuator Available,SUPPLY OUTLET NODE,System Node Setpoint,Temperature Minimum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,SUPPLY OUTLET NODE,System Node Setpoint,Temperature Maximum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,SUPPLY OUTLET NODE,System Node Setpoint,Humidity Ratio Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,SUPPLY OUTLET NODE,System Node Setpoint,Humidity Ratio Maximum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,SUPPLY OUTLET NODE,System Node Setpoint,Humidity Ratio Minimum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,SUPPLY OUTLET NODE,System Node Setpoint,Mass Flow Rate Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,SUPPLY OUTLET NODE,System Node Setpoint,Mass Flow Rate Maximum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,SUPPLY OUTLET NODE,System Node Setpoint,Mass Flow Rate Minimum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE INLET NODE,System Node Setpoint,Temperature Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE INLET NODE,System Node Setpoint,Temperature Minimum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE INLET NODE,System Node Setpoint,Temperature Maximum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE INLET NODE,System Node Setpoint,Humidity Ratio Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN ZONE INLET NODE,System Node Setpoint,Humidity Ratio Maximum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN ZONE INLET NODE,System Node Setpoint,Humidity Ratio Minimum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN ZONE INLET NODE,System Node Setpoint,Mass Flow Rate Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE INLET NODE,System Node Setpoint,Mass Flow Rate Maximum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE INLET NODE,System Node Setpoint,Mass Flow Rate Minimum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE NODE,System Node Setpoint,Temperature Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE NODE,System Node Setpoint,Temperature Minimum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE NODE,System Node Setpoint,Temperature Maximum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE NODE,System Node Setpoint,Humidity Ratio Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN ZONE NODE,System Node Setpoint,Humidity Ratio Maximum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN ZONE NODE,System Node Setpoint,Humidity Ratio Minimum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN ZONE NODE,System Node Setpoint,Mass Flow Rate Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE NODE,System Node Setpoint,Mass Flow Rate Maximum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE NODE,System Node Setpoint,Mass Flow Rate Minimum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE OUTLET NODE,System Node Setpoint,Temperature Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE OUTLET NODE,System Node Setpoint,Temperature Minimum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE OUTLET NODE,System Node Setpoint,Temperature Maximum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE OUTLET NODE,System Node Setpoint,Humidity Ratio Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN ZONE OUTLET NODE,System Node Setpoint,Humidity Ratio Maximum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN ZONE OUTLET NODE,System Node Setpoint,Humidity Ratio Minimum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN ZONE OUTLET NODE,System Node Setpoint,Mass Flow Rate Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE OUTLET NODE,System Node Setpoint,Mass Flow Rate Maximum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE OUTLET NODE,System Node Setpoint,Mass Flow Rate Minimum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT INLET NODE,System Node Setpoint,Temperature Setpoint,[C]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT INLET NODE,System Node Setpoint,Temperature Minimum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT INLET NODE,System Node Setpoint,Temperature Maximum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT INLET NODE,System Node Setpoint,Humidity Ratio Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT INLET NODE,System Node Setpoint,Humidity Ratio Maximum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT INLET NODE,System Node Setpoint,Humidity Ratio Minimum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT INLET NODE,System Node Setpoint,Mass Flow Rate Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT INLET NODE,System Node Setpoint,Mass Flow Rate Maximum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT INLET NODE,System Node Setpoint,Mass Flow Rate Minimum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT OUTLET NODE,System Node Setpoint,Temperature Setpoint,[C]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT OUTLET NODE,System Node Setpoint,Temperature Minimum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT OUTLET NODE,System Node Setpoint,Temperature Maximum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT OUTLET NODE,System Node Setpoint,Humidity Ratio Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT OUTLET NODE,System Node Setpoint,Humidity Ratio Maximum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT OUTLET NODE,System Node Setpoint,Humidity Ratio Minimum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT OUTLET NODE,System Node Setpoint,Mass Flow Rate Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT OUTLET NODE,System Node Setpoint,Mass Flow Rate Maximum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,ZONE EQUIPMENT OUTLET NODE,System Node Setpoint,Mass Flow Rate Minimum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE ATU IN NODE,System Node Setpoint,Temperature Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE ATU IN NODE,System Node Setpoint,Temperature Minimum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE ATU IN NODE,System Node Setpoint,Temperature Maximum Setpoint,[C]
+EnergyManagementSystem:Actuator Available,MAIN ZONE ATU IN NODE,System Node Setpoint,Humidity Ratio Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN ZONE ATU IN NODE,System Node Setpoint,Humidity Ratio Maximum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN ZONE ATU IN NODE,System Node Setpoint,Humidity Ratio Minimum Setpoint,[kgWater/kgDryAir]
+EnergyManagementSystem:Actuator Available,MAIN ZONE ATU IN NODE,System Node Setpoint,Mass Flow Rate Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE ATU IN NODE,System Node Setpoint,Mass Flow Rate Maximum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,MAIN ZONE ATU IN NODE,System Node Setpoint,Mass Flow Rate Minimum Available Setpoint,[kg/s]
+EnergyManagementSystem:Actuator Available,CRAC SYSTEM,AirLoopHVAC,Availability Status,[ ]
+! <EnergyManagementSystem:InternalVariable Available>, Unique Name, Internal Data Type, Units 
+EnergyManagementSystem:InternalVariable Available,MAIN ZONE,Zone Floor Area,[m2]
+EnergyManagementSystem:InternalVariable Available,MAIN ZONE,Zone Air Volume,[m3]
+EnergyManagementSystem:InternalVariable Available,MAIN ZONE,Zone Multiplier,[ ]
+EnergyManagementSystem:InternalVariable Available,MAIN ZONE,Zone List Multiplier,[ ]
+EnergyManagementSystem:InternalVariable Available,EC PLUG FAN 1,Fan Maximum Mass Flow Rate,[kg/s]
+EnergyManagementSystem:InternalVariable Available,EC PLUG FAN 1,Fan Nominal Pressure Rise,[Pa]
+EnergyManagementSystem:InternalVariable Available,EC PLUG FAN 1,Fan Nominal Total Efficiency,[fraction]
