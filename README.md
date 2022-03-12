@@ -6,8 +6,9 @@ python script for generating power cold and heat load in different building type
 + ASHRAE的一部分建筑类型的idf文件，用于后续ep仿真
 + 通过天气数据和建筑文件仿真每年8760的冷热电负荷
 
-
-仿真脚本为run1124.py
+```Run_BuildingWeather.py```为原始版本的eppy调用程序，感谢申沅均师兄的技术支持
+```weathers/spyder.py```为request爬取energy plus官网天气数据的爬虫文件
+```run1124.py```为主程序，仿真脚本
 
 ## 配置运行环境
 
